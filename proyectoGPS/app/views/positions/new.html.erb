@@ -1,0 +1,36 @@
+<%= link_to "index", root_path %>
+<p>Estás enviando tu posición</p>
+<div id="coords_form" style="display:none;">
+  <%= form_for(Position.new) do |f| %>
+    <%= f.text_field :user_id%>
+    <br>
+    <%= f.text_field :lat %>
+    <br>
+    <%= f.text_field :lon %>
+    <br>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<script>
+  var pos;
+  var form = document.getElementById("new_position");
+  var txtId = document.getElementById("position_user_id");
+  var txtLat = document.getElementById("position_lat");
+  var txtLon = document.getElementById("position_lon");
+
+  function getPosition(){
+    navigator.geolocation.getCurrentPosition(function(position){
+      pos = position
+      txtId.value = "<%= current_user.id %>";
+      txtLat.value = "" + pos.coords.latitude;
+      txtLon.value = "" + pos.coords.longitude;
+      form.submit();
+    }, function(error){
+      alert("Error ocurred. Code: " + error.code);
+      //0: Unknown - 1: Permossion denied - 2: Position unavailable - 3: Timeout
+    });
+  }
+
+  setInterval(getPosition, 1000);
+</script>
