@@ -1,8 +1,8 @@
 # 1. Definición del equipo, proyecto y aplicación
 * Miembros del Equipo y asignación de QA
 
-   Lina María Beltran Durango
-   Alejandro Taborda Diaz
+   Lina María Beltran Durango  
+   Alejandro Taborda Diaz  
    Edison Zapata Henao
 
 * Aplicación base de proyecto 1
@@ -11,15 +11,15 @@
 
 * Requisitos funcionales
 
-   El sistema debe contar con registro y autenticación de usuarios
-   El sistema debe registrar la posición del GPS del usuario
+   El sistema debe contar con registro y autenticación de usuarios  
+   El sistema debe registrar la posición del GPS del usuario  
    El sistema debe permitir la visualización de las posiciones almacenadas en un mapa
 
 # 2. Detalles técnicos
 
-   Lenguaje de programación: Ruby
-   Framework Web Back-End: Rails
-   Framework Web Front-End: Templates HTML
-   Web App Server: Puma
-   Web Server: Nginx
-- Base de Datos: Postgresql
+   Lenguaje de programación: Ruby  
+   Framework Web Back-End: Rails  
+   Framework Web Front-End: Templates HTML  
+   Web App Server: Puma  
+   Web Server: Nginx  
+   Base de Datos: Postgresql  
