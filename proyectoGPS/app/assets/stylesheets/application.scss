@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+body{
+  background: image-url("fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.card-panel{
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+}
