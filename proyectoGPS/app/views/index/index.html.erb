@@ -1,8 +1,16 @@
-<H2>Hello World</H2>
-<P>
-	The time is now: <%= Time.now %>
-	<br>
-	<%= link_to "Send position", "positions" %>
-	<br>
-	<%= link_to "Show position", "map" %>
-</P>
+<div class="container">
+
+	<div class="card-panel center white-text">
+		<H2>¡Bienvenido!</H2>
+		<h5>¿Qué quieres hacer ahora?</h5>
+		<P>
+			Ahora es: <%= Time.now %>
+		</P>
+		<div class="row">
+			<%= link_to "Enviar posición", "positions", class:"btn" %>
+			<%= link_to "Mostrar posiciones", "map", class:"btn" %>
+		</div>
+
+	</div>
+
+</div>

@@ -5,12 +5,14 @@
     <%= csrf_meta_tags %>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <style>
       #map {
-        height: 100%;
+        height: 80%;
+        width: 80%;
+        margin: auto;
       }
       html,body {
         height: 100%;
@@ -21,23 +23,43 @@
   </head>
 
   <body>
-    <% if notice %>
-      <p class="notice"> <%= notice %> </p>
-    <% end %>
-    <% if alert %>
-      <p class="notice"> <%= alert %> </p>
-    <% end %>
+    <nav>
+      <div class="nav-wrapper">
+        <% if user_signed_in? %>
+        Conectado como <strong> <%= current_user.email %> </strong>
+        <ul class="right">
+          <li>
+            <%= link_to "Inicio", root_path %>
+          </li>
+          <li>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+          </li>
+        </ul>
+        <% else %>
+        <ul class="right">
+          <li>
+            <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %>
+          </li>
+          <li>
+            <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+          </li>
+        </ul>
+        <% end %>
 
-    <p class="navbar-text pull-rigth">
-      <% if user_signed_in? %>
-        Logged in as <strong> <%= current_user.email %> </strong>
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
-      <% else %>
-        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %>
-        <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+      </div>
+
+    </nav>
+    <div class="container">
+
+      <% if notice %>
+      <p class="card-panel green lighten-1 white-text"> <%= notice %> </p>
       <% end %>
-    </p>
+      <% if alert %>
+      <p class="card-panel red lighten-1 white-text"> <%= alert %> </p>
+      <% end %>
 
+
+    </div>
     <%= yield %>
   </body>
 </html>

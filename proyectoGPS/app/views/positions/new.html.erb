@@ -1,14 +1,21 @@
-<%= link_to "index", root_path %>
-<p>Estás enviando tu posición</p>
+<div class="container">
+  <div class="card-panel center white-text">
+    <h2>Guardando datos de ubicación...</h2>
+    <span class="btn btn-floating btn-large cyan pulse ubicación"><i class="material-icons">location_on</i></span>
+  </div>
+
+</div>
+
+
 <div id="coords_form" style="display:none;">
   <%= form_for(Position.new) do |f| %>
-    <%= f.text_field :user_id%>
-    <br>
-    <%= f.text_field :lat %>
-    <br>
-    <%= f.text_field :lon %>
-    <br>
-    <%= f.submit %>
+  <%= f.text_field :user_id%>
+  <br>
+  <%= f.text_field :lat %>
+  <br>
+  <%= f.text_field :lon %>
+  <br>
+  <%= f.submit %>
   <% end %>
 </div>
 
