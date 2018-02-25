@@ -1,8 +1,0 @@
-I"r(function() {
-  $("#new_position").ajaxSubmit({
-    url: '/position',
-    type: 'post'
-  });
-
-}).call(this);
-:ET
