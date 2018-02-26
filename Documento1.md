@@ -1,25 +1,58 @@
-# 1. Definición del equipo, proyecto y aplicación
-* Miembros del Equipo y asignación de QA
+# 1. Definiciï¿½n del equipo, proyecto y aplicaciï¿½n
+* Miembros del Equipo y asignaciï¿½n de QA
 
-   Lina María Beltran Durango  
-   Alejandro Taborda Diaz  
-   Edison Zapata Henao
+   1. Lina Marï¿½a Beltran Durango ______  QA1:______Disponiblidad
+   2. Alejandro Taborda Diaz ______  QA2:______ Rendimiento
+   3. Edison Zapata Henao ______  QA3:______ Seguridad
 
-* Aplicación base de proyecto 1
+* Aplicaciï¿½n base de proyecto 1
 
-   Como base, usaremos la aplicación de Edison, alojada en la máquina 10.131.137.161, pues previamente definimos que seguiríamos trabajando bajo el framework de Rails, y esta aplicación es la que más avanzada está de las dos opciones. La aplicación cuenta con registro de usuarios e inicio de sesión, envió de GPS cada segundo mediante javascript en front-end y visualización de posiciones en un mapa de Google Maps discriminadas por fecha
+   Como base, usaremos la aplicaciï¿½n de Edison, alojada en la mï¿½quina 10.131.137.161, pues previamente definimos que seguirï¿½amos trabajando bajo el framework de Rails, y esta aplicaciï¿½n es la que mï¿½s avanzada estï¿½ de las dos opciones. La aplicaciï¿½n cuenta con registro de usuarios e inicio de sesiï¿½n, enviï¿½ de GPS cada segundo mediante javascript en front-end y visualizaciï¿½n de posiciones en un mapa de Google Maps discriminadas por fecha
 
 * Requisitos funcionales
 
-   El sistema debe contar con registro y autenticación de usuarios  
-   El sistema debe registrar la posición del GPS del usuario  
-   El sistema debe permitir la visualización de las posiciones almacenadas en un mapa
+   El sistema debe contar con registro y autenticaciï¿½n de usuarios  
+   El sistema debe registrar la posiciï¿½n del GPS del usuario  
+   El sistema debe permitir la visualizaciï¿½n de las posiciones almacenadas en un mapa
 
-# 2. Detalles técnicos
+# 2. Detalles tï¿½cnicos
 
-   Lenguaje de programación: Ruby  
+   Lenguaje de programaciï¿½n: Ruby  
    Framework Web Back-End: Rails  
    Framework Web Front-End: Templates HTML  
    Web App Server: Puma  
    Web Server: Nginx  
-   Base de Datos: Postgresql  
+   Base de Datos: Postgresql
+   
+# 3. AplicaciÃ³n completa desplegada en el Data Center AcadÃ©mico
+   
+   DirecciÃ³n Ip: 10.131.137.161
+
+# 4. Marco-referencia-v1
+
+   *_QA - 1 Disponibilidad:_*
+   
+   *Â¿QuÃ© es?*
+   
+   La disponibilidad de las aplicaciones es uno de los factores mÃ¡s importantes 
+   que ha de ser tenido en cuenta al momento de diseÃ±ar, implementar y desplegar 
+   aplicaciones. La disponibilidad se centra en la capacidad de un sistema de estar 
+   disponible para satisfacer las necesidades del usuario final.
+   
+   La disponibilidad es uno de los atributos de calidad mÃ¡s importantes, puesto que 
+   el reto mayor que enfrenta un arquitecto de soluciones estÃ¡ en garantizar la 
+   disponibilidad de una app y es uno de los puntos centrales sobre 
+   los que depende la satisfacciÃ³n de un usuario / cliente. Normalmente se hacen acuerdos 
+   de SLA (Service Level Agreement), que dictamina los requerimientos 
+   y expectativas de un cliente frente a la disponibilidad del producto. Para poder 
+   cumplir estos objetivos, y garantizar el acceso al sistema, se tienden a identificar 
+   diversas mÃ©tricas, las cuales serÃ¡n cruciales al evaluar el desempeÃ±o del sistema a 
+   construir, a estas se les llama KPI (Key Performance Indicator). Entre estas estÃ¡n:
+   
+   â€¢	SLA (Service Level Agreement)
+   â€¢	Transacciones CrÃ­ticas para los procesos de negocio de la empresa.
+   â€¢	PolÃ­ticas de backup
+   â€¢	Tiempos de downtime aceptables.
+
+
+
