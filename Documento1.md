@@ -31,9 +31,8 @@
    
 # 3. Aplicación completa desplegada en el Data Center Académico
    
-      ```ruby
       Dirección Ip: 10.131.137.161
-      ```
+
 # 4. Marco-referencia-v1
 
 **_QA - 1 Disponibilidad:_** *¿Qué es?*
@@ -85,6 +84,18 @@ construir, a estas se les llama KPI (Key Performance Indicator). Entre estas est
    * Stateless and lightweight application components
    * Continuous incremental code and data replication
    * Availability trade-off using the CAP theorem.
+
+###**parámetros y  métricas de disponibilidad claves**
+Tiempo medio de recuperación (_MTTR_): es el tiempo promedio para que el sistema se recupere de una
+falla.
+
+      MTTR = (Tiempo de inactividad total)/(número total de fallas del sistema)
+      
+Tiempo medio entre fallas (_MTBF_): este es el tiempo promedio entre dos fallas del sistemas
+
+      MTBF = (Tiempo de actividad total)/(número total de fallas del sistema)
+
+
    
 
 **_QA - 2 Rendimiento:_** *¿Qué es?*
