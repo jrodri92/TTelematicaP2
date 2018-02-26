@@ -85,7 +85,7 @@ construir, a estas se les llama KPI (Key Performance Indicator). Entre estas est
    * Continuous incremental code and data replication
    * Availability trade-off using the CAP theorem.
 
-###**parámetros y  métricas de disponibilidad claves**
+### **parámetros y  métricas de disponibilidad claves**
 Tiempo medio de recuperación (_MTTR_): es el tiempo promedio para que el sistema se recupere de una
 falla.
 
