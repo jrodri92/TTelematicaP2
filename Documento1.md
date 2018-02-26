@@ -102,20 +102,76 @@ Tiempo medio entre fallas (_MTBF_): este es el tiempo promedio entre dos fallas 
 
 El concepto WPO está relacionado con los métodos y técnicas para optimizar la 
 velocidad de las páginas web, lo que implica analizar todos los componentes de 
-una página web para optimizar el tiempo de respuesta de la misma.Es necesario tener 
+una página web para optimizar el tiempo de respuesta de la misma. Es necesario tener 
 en cuenta los factores que afectan directa o indirectamente el rendimiento de nuestra
 web application.
 
 **Factores críticos**
 
 **Ventaja competitiva:** A medida que la expectativa de velocidad aumenta, los sitios Web más lentos van perdiendo competitividad.
-**Experiencia del usuario:** el factor de lealtad del usuario es proporcional al rendimiento de nuestra aplicación. 
+
+**Experiencia del usuario:** el factor de lealtad del usuario es proporcional al rendimiento de nuestra aplicación.
+
 **Impacto financiero:** La tasa de conversión (relación visitante-comprador) se ve afectado si la página no responde 
 rápidamente; Esto demuestra un impacto directo de la velocidad de la página en los ingresos en línea.
+
 **Estrategia omni-canal (Homologación de dispositivos – navegadores):** Es ideal que una página web se adapte a cualquier 
 dispositivo y que brinde la misma experiencia y uniformidad a la “original”.
 
-**_¿Qué patrones se pueden emplear?_**
+
+**_¿Qué estrategias se pueden emplear?_**
+
+1. Establecer el Acuerdo de Nivel de Servicio (SLA) de rendimiento y los objetivos
+2. Modelación del rendimiento, evaluación de escenarios y análisis de procesos críticos para el negocio y transacciones.
+3. Establecimiento de directrices de diseño de rendimiento
+4. Aplicación de directrices de diseño de rendimiento
+5. Identificar, analizar y eliminar cuellos de botella en varios componentes
+6. Establecer una infraestructura continua de monitoreo y alerta
+7. Establecer una gobernanza del desempeño consistente en procesos y equipos bien definidos para mantener los SLA de rendimiento.
+
+**Pasos para modelar y evaluar varios escenarios de rendimiento para**
+**procesos y transacciones críticos para el negocio**
+
+**Paso 1:** Identificar y priorizar varios escenarios de negocios
+**Paso 2:** modelar la carga de trabajo
+**Paso 3:** identifica cualquier patrón relacionado con el rendimiento
+
+
+**Establecer pautas de diseño de rendimiento**
+
+**Pensar en Caché:** Tener almacenamiento en cache, es decir, tener la mayor cantidad 
+posible de componentes y paginas importantes bajo una estrategia de almacenamiento en caché.
+
+**Diseño para el fracaso:** Evaluar todas las posibilidades de fracaso y su probabilidad probable. 
+Algunos eventos comunes de falla pueden ser fallos de hardware, fallos de seguridad, 
+desastres naturales, repunte repentino del tráfico de usuarios, fallos de red, fallos de operaciones, etc.
+
+**Computación distribuida y paralela:** Diseñe software para que su computación pueda 
+distribuirse a través de múltiples nodos de computación. Esto ofrece la doble ventaja 
+de rendimiento y escalabilidad.
+
+**Mantenerse liviano:** los componentes páginas clave deben mantenerse ligeros reduciendo 
+su tamaño general y minimizando el número de viajes de ida y vuelta del servidor.
+
+**Cargas no bloqueadas usando la solicitud de datos asincrónicos:** Sean componentes del 
+lado del cliente o para comunicarse con el servidor o para la agregación de datos, intente 
+aprovechar el enfoque basado en AJAX. Esto mejora drásticamente el tiempo de carga de la 
+página percibida y proporciona una carga no bloqueante de la página.
+
+**Usar la política de carga bajo demanda:** Cargue los datos y el componente sólo cuando sea necesario.
+
+**Batching:** Mientras se recuperan datos de sistemas de interfaz como una base de datos 
+o servicios web, se recomienda hacer batch de las solicitudes con el fin de minimizar el
+número de viajes de ida y vuelta del servidor.
+
+Entre otras pautas que podrá conocer en el capitulo de rendimiento del libro:
+ > *“Architecting High Performing, Scalableand Available Enterprise Web Applications”*
+ > de **Shailesh Kumar, 2015** [Libro](http://proquestcombo.safaribooksonline.com.ezproxy.eafit.edu.co/book/software-engineering-and-development/enterprise/9780128022580/firstchapter)
+
+
+
+
+
 
 **_QA - 3 Seguridad:_** *¿Qué es?*
 
