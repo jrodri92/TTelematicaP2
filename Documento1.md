@@ -31,8 +31,9 @@
    
 # 3. Aplicación completa desplegada en el Data Center Académico
    
-   Dirección Ip: 10.131.137.161
-
+      ```ruby
+      Dirección Ip: 10.131.137.161
+      ```
 # 4. Marco-referencia-v1
 
 **_QA - 1 Disponibilidad:_** *¿Qué es?*
@@ -75,7 +76,7 @@ construir, a estas se les llama KPI (Key Performance Indicator). Entre estas est
    * Preventive Maintenance
    * Perfective Maintenance
 
-![Arquitectura redundante](/imagenes/redundancia.jpg)
+      ![Arquitectura redundante](/imagenes/redundancia.jpg)
    
    _Los **específicos** son:_
 
