@@ -1,6 +1,6 @@
 # 1. Definición del equipo, proyecto y aplicación
 
-* Miembros del Equipo y asignaci�n de QA
+* Miembros del Equipo y asignación de QA
 
    1. Lina María Beltran Durango ______  QA1:______Disponiblidad
    2. Alejandro Taborda Diaz ______  QA2:______ Rendimiento
@@ -58,6 +58,30 @@
     * Transacciones Críticas para los procesos de negocio de la empresa.
     * Políticas de backup
     * Tiempos de downtime aceptables.
+    
+    *¿Qué patrones se pueden emplear?*
+   Hay dos tipos de patrones, aquellos generales y aquellos específicos al software como tal. 
+   
+   _Los generales son los siguientes:_
+   
+   * Failover
+   * Failback
+   * Replication
+   * Redundancy
+   * Virtualization
+   * Continuous Maintenance
+   * Corrective Maintenance
+   * Preventive Maintenance
+   * Perfective Maintenance
+   
+   _Aquellos específicos al software son:_
+
+   * Graceful and step-wise functionality degradation pattern
+   * Asynchronous and services-based integration with external interfaces
+   * Stateless and lightweight application components
+   * Continuous incremental code and data replication
+   * Availability trade-off using the CAP theorem.
+
 
 
 
