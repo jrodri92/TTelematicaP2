@@ -133,7 +133,9 @@ dispositivo y que brinde la misma experiencia y uniformidad a la “original”.
 **procesos y transacciones críticos para el negocio**
 
 **Paso 1:** Identificar y priorizar varios escenarios de negocios
+
 **Paso 2:** modelar la carga de trabajo
+
 **Paso 3:** identifica cualquier patrón relacionado con el rendimiento
 
 
