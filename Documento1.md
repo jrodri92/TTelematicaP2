@@ -33,7 +33,7 @@
    
       Dirección Ip: 10.131.137.161
 
-# 4. Marco-referencia-v1
+# 4. Marco de referencia v1
 
 **_QA - 1 Disponibilidad:_** *¿Qué es?*
    
@@ -69,11 +69,11 @@ construir, a estas se les llama KPI (Key Performance Indicator). Entre estas est
    * Failback (Es el proceso de resincronización de los datos a la ubicación principal)
    * Replication (permite que un servidor principal, conocido como publicador, distribuya datos a uno o varios servidores secundarios o suscriptores)
    * Redundancy (comprenden la capacidad de un sistema de comunicaciones para detectar un fallo en la red de la manera más rápida posible)
-   * Virtualization
-   * Continuous Maintenance
-   * Corrective Maintenance
-   * Preventive Maintenance
-   * Perfective Maintenance
+   * Virtualization (Versiones virtuales de cualquier recurso de SW/HW)
+   * Continuous Maintenance (Actividades de mantenimiento regulares para los componentes de hardware)
+   * Corrective Maintenance (Forma de mantener el hardware en operación, principalmente el equipo de mantenimiento identificará la causa raíz de la falla y solucionará los problemas una vez que ocurran)
+   * Preventive Maintenance (Consiste en administradores del sistema que monitorean regularmente la utilización de recursos de hardware usando un tablero y actualizan el hardware si es necesario)
+   * Perfective Maintenance (Se incluyen en esta categoría: agregar más hardware para mejorar los tiempos de respuesta o optimizar las bases de datos para una ejecución más rápida de las consultas)
 
       ![Arquitectura redundante](/imagenes/redundancia.jpg)
    
@@ -94,12 +94,28 @@ falla.
 Tiempo medio entre fallas (_MTBF_): este es el tiempo promedio entre dos fallas del sistemas
 
       MTBF = (Tiempo de actividad total)/(número total de fallas del sistema)
-
-
    
 
 **_QA - 2 Rendimiento:_** *¿Qué es?*
 
+**Concepto** _Web Performance Optimization (WPO)_
+
+El concepto WPO está relacionado con los métodos y técnicas para optimizar la 
+velocidad de las páginas web, lo que implica analizar todos los componentes de 
+una página web para optimizar el tiempo de respuesta de la misma.Es necesario tener 
+en cuenta los factores que afectan directa o indirectamente el rendimiento de nuestra
+web application.
+
+**Factores críticos**
+
+**Ventaja competitiva:** A medida que la expectativa de velocidad aumenta, los sitios Web más lentos van perdiendo competitividad.
+**Experiencia del usuario:** el factor de lealtad del usuario es proporcional al rendimiento de nuestra aplicación. 
+**Impacto financiero:** La tasa de conversión (relación visitante-comprador) se ve afectado si la página no responde 
+rápidamente; Esto demuestra un impacto directo de la velocidad de la página en los ingresos en línea.
+**Estrategia omni-canal (Homologación de dispositivos – navegadores):** Es ideal que una página web se adapte a cualquier 
+dispositivo y que brinde la misma experiencia y uniformidad a la “original”.
+
+**_¿Qué patrones se pueden emplear?_**
 
 **_QA - 3 Seguridad:_** *¿Qué es?*
 
