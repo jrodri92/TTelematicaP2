@@ -2,7 +2,7 @@
 
 * Miembros del Equipo y asignación de QA
 
-   1. Lina María Beltran Durango ______  QA1:______Disponiblidad
+   1. Lina María Beltran  ______  QA1:______Disponiblidad
    2. Alejandro Taborda Diaz ______  QA2:______ Rendimiento
    3. Edison Zapata Henao ______  QA3:______ Seguridad
 
@@ -129,17 +129,17 @@ dispositivo y que brinde la misma experiencia y uniformidad a la “original”.
 6. Establecer una infraestructura continua de monitoreo y alerta
 7. Establecer una gobernanza del desempeño consistente en procesos y equipos bien definidos para mantener los SLA de rendimiento.
 
-**Pasos para modelar y evaluar varios escenarios de rendimiento para**
+### **Pasos para modelar y evaluar varios escenarios de rendimiento para**
 **procesos y transacciones críticos para el negocio**
 
 **Paso 1:** Identificar y priorizar varios escenarios de negocios
 
 **Paso 2:** modelar la carga de trabajo
 
-**Paso 3:** identifica cualquier patrón relacionado con el rendimiento
+**Paso 3:** identificar cualquier patrón relacionado con el rendimiento
 
 
-**Establecer pautas de diseño de rendimiento**
+### **Establecer pautas de diseño de rendimiento**
 
 **Pensar en Caché:** Tener almacenamiento en cache, es decir, tener la mayor cantidad 
 posible de componentes y paginas importantes bajo una estrategia de almacenamiento en caché.
@@ -171,12 +171,49 @@ Entre otras pautas que podrá conocer en el capitulo de rendimiento del libro:
  > de **Shailesh Kumar, 2015** [Libro](http://proquestcombo.safaribooksonline.com.ezproxy.eafit.edu.co/book/software-engineering-and-development/enterprise/9780128022580/firstchapter)
 
 
+### **herramientas para el monitoreo del rendimiento**
 
+**JProfiler:** Muestra el consumo de memoria, al igual que otros componentes de la aplicación.
+
+**FindBugs:** Durante análisis estáticos, analiza escenarios de casos con concurrencia. 
 
 
 
 **_QA - 3 Seguridad:_** *¿Qué es?*
 
+Toda **estrategia** de seguridad debe comprender los siguientes aspectos:
 
+**Confidencialidad:** Los datos no se deben divulgar a usuarios no autorizados o sin intención.
+Los datos comerciales, la información personal del usuario y los datos de propiedad intelectual se incluirán en
+esta categoría.
+
+**Integridad:** Los datos no deben ser modificados involuntariamente por usuarios no autorizados.
+La integridad de los datos se debe mantener cuando los datos se transmiten y cuando son consultados.
+
+**Disponibilidad:** Los datos y servicios deberían estar funcionando todo el tiempo.
+
+![Proceso de establecimiento de seguridad web empresarial](/imagenes/securityQA.jpg)
+
+
+### **Etapas de una estrategia de seguridad**
+
+* Análisis de seguridad.
+
+* Modelado de amenazas.
+
+* Diseño de seguridad.
+
+* Implementación de seguridad.
+
+* Pruebas de seguridad.
+
+* Monitoreo de seguridad.
+
+Una organización tiene que identificar de forma proactiva las amenazas de vulnerabilidad
+de sus aplicaciones y realizar **evaluación de riesgos**. La evaluación de riesgos calcula el riesgo global 
+como un factor de probabilidad de riesgo e impacto del riesgo. El equipo de seguridad debe diseñar los 
+principios y pautas de seguridad para una alta prioridad del riesgo.
+
+:computer:  :computer: :computer:
 
 
