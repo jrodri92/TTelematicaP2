@@ -35,29 +35,29 @@
 
 # 4. Marco-referencia-v1
 
-   *_QA - 1 Disponibilidad:_*
+   **_QA - 1 Disponibilidad:_**
    
    *¿Qué es?*
    
-      La disponibilidad de las aplicaciones es uno de los factores más importantes 
-      que ha de ser tenido en cuenta al momento de diseñar, implementar y desplegar 
-      aplicaciones. La disponibilidad se centra en la capacidad de un sistema de estar 
-      disponible para satisfacer las necesidades del usuario final.
-      
-      La disponibilidad es uno de los atributos de calidad más importantes, puesto que 
-      el reto mayor que enfrenta un arquitecto de soluciones está en garantizar la 
-      disponibilidad de una app y es uno de los puntos centrales sobre 
-      los que depende la satisfacción de un usuario / cliente. Normalmente se hacen acuerdos 
-      de SLA (Service Level Agreement), que dictamina los requerimientos 
-      y expectativas de un cliente frente a la disponibilidad del producto. Para poder 
-      cumplir estos objetivos, y garantizar el acceso al sistema, se tienden a identificar 
-      diversas métricas, las cuales serán cruciales al evaluar el desempeño del sistema a 
-      construir, a estas se les llama KPI (Key Performance Indicator). Entre estas están:
-      
-       * SLA (Service Level Agreement)
-       * Transacciones Críticas para los procesos de negocio de la empresa.
-       * Políticas de backup
-       * Tiempos de downtime aceptables.
+    La disponibilidad de las aplicaciones es uno de los factores más importantes 
+    que ha de ser tenido en cuenta al momento de diseñar, implementar y desplegar 
+    aplicaciones. La disponibilidad se centra en la capacidad de un sistema de estar 
+    disponible para satisfacer las necesidades del usuario final.
+    
+    La disponibilidad es uno de los atributos de calidad más importantes, puesto que 
+    el reto mayor que enfrenta un arquitecto de soluciones está en garantizar la 
+    disponibilidad de una app y es uno de los puntos centrales sobre 
+    los que depende la satisfacción de un usuario / cliente. Normalmente se hacen acuerdos 
+    de SLA (Service Level Agreement), que dictamina los requerimientos 
+    y expectativas de un cliente frente a la disponibilidad del producto. Para poder 
+    cumplir estos objetivos, y garantizar el acceso al sistema, se tienden a identificar 
+    diversas métricas, las cuales serán cruciales al evaluar el desempeño del sistema a 
+    construir, a estas se les llama KPI (Key Performance Indicator). Entre estas están:
+    
+        * SLA (Service Level Agreement)
+        * Transacciones Críticas para los procesos de negocio de la empresa.
+        * Políticas de backup
+        * Tiempos de downtime aceptables.
     
     
     
