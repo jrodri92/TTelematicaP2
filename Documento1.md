@@ -1,23 +1,28 @@
-# 1. Definici�n del equipo, proyecto y aplicaci�n
+# 1. Definición del equipo, proyecto y aplicación
+
 * Miembros del Equipo y asignaci�n de QA
 
-   1. Lina Mar�a Beltran Durango ______  QA1:______Disponiblidad
+   1. Lina María Beltran Durango ______  QA1:______Disponiblidad
    2. Alejandro Taborda Diaz ______  QA2:______ Rendimiento
    3. Edison Zapata Henao ______  QA3:______ Seguridad
 
-* Aplicaci�n base de proyecto 1
+* Aplicación base de proyecto 1
 
-   Como base, usaremos la aplicaci�n de Edison, alojada en la m�quina 10.131.137.161, pues previamente definimos que seguir�amos trabajando bajo el framework de Rails, y esta aplicaci�n es la que m�s avanzada est� de las dos opciones. La aplicaci�n cuenta con registro de usuarios e inicio de sesi�n, envi� de GPS cada segundo mediante javascript en front-end y visualizaci�n de posiciones en un mapa de Google Maps discriminadas por fecha
+   Como base, usaremos la aplicación de Edison Zapata, alojada en la máquina 10.131.137.161, 
+   pues previamente definimos que seguiríamos trabajando bajo el framework de Rails, y esta 
+   aplicación es la que más avanzada está de las dos opciones. La aplicación cuenta con registro 
+   de usuarios e inicio de sesión, envío de GPS cada segundo mediante javascript en front-end y 
+   visualización de posiciones en un mapa de Google Maps discriminadas por fecha
 
 * Requisitos funcionales
 
-   El sistema debe contar con registro y autenticaci�n de usuarios  
-   El sistema debe registrar la posici�n del GPS del usuario  
-   El sistema debe permitir la visualizaci�n de las posiciones almacenadas en un mapa
+   El sistema debe contar con registro y autenticación de usuarios  
+   El sistema debe registrar la posición del GPS del usuario  
+   El sistema debe permitir la visualización de las posiciones almacenadas en un mapa
 
-# 2. Detalles t�cnicos
+# 2. Detalles técnicos
 
-   Lenguaje de programaci�n: Ruby  
+   Lenguaje de programación: Ruby  
    Framework Web Back-End: Rails  
    Framework Web Front-End: Templates HTML  
    Web App Server: Puma  
@@ -49,10 +54,10 @@
    diversas métricas, las cuales serán cruciales al evaluar el desempeño del sistema a 
    construir, a estas se les llama KPI (Key Performance Indicator). Entre estas están:
    
-   •	SLA (Service Level Agreement)
-   •	Transacciones Críticas para los procesos de negocio de la empresa.
-   •	Políticas de backup
-   •	Tiempos de downtime aceptables.
+    * SLA (Service Level Agreement)
+    * Transacciones Críticas para los procesos de negocio de la empresa.
+    * Políticas de backup
+    * Tiempos de downtime aceptables.
 
 
 
