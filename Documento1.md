@@ -52,23 +52,22 @@ cumplir estos objetivos, y garantizar el acceso al sistema, se tienden a identif
 diversas métricas, las cuales serán cruciales al evaluar el desempeño del sistema a 
 construir, a estas se les llama KPI (Key Performance Indicator). Entre estas están:
 
-
-    * SLA (Service Level Agreement)
-    * Transacciones Críticas para los procesos de negocio de la empresa.
-    * Políticas de backup
-    * Tiempos de downtime aceptables.
-
+* Disponibilidad SLA (Service Level Agreement)
+* Transacciones Críticas para los procesos de negocio de la empresa.
+* Políticas de backup
+* Tiempos de downtime aceptables.
 
 
-   *¿Qué patrones se pueden emplear?*
+
+   **_¿Qué patrones se pueden emplear?_**
    
    Hay dos tipos de patrones, aquellos **generales** y aquellos **específicos** al software.
    
    _Los generales son los siguientes:_
    
-   * Failover
-   * Failback
-   * Replication
+   * Failover (Si el servidor primario falla, entonces el servidor en espera debería comenzar)
+   * Failback (Es el proceso de resincronización de los datos a la ubicación principal)
+   * Replication 
    * Redundancy
    * Virtualization
    * Continuous Maintenance
@@ -83,6 +82,12 @@ construir, a estas se les llama KPI (Key Performance Indicator). Entre estas est
    * Stateless and lightweight application components
    * Continuous incremental code and data replication
    * Availability trade-off using the CAP theorem.
+   
+
+**_QA - 2 Rendimiento:_** *¿Qué es?*
+
+
+**_QA - 3 Seguridad:_** *¿Qué es?*
 
 
 
