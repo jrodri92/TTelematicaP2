@@ -214,6 +214,6 @@ de sus aplicaciones y realizar **evaluación de riesgos**. La evaluación de rie
 como un factor de probabilidad de riesgo e impacto del riesgo. El equipo de seguridad debe diseñar los 
 principios y pautas de seguridad para una alta prioridad del riesgo.
 
-:computer:  :computer: :computer:
+:computer:  :computer: :computer: :sunglasses: :sunglasses: :sunglasses:
 
 
