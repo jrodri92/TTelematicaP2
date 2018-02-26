@@ -59,23 +59,25 @@ construir, a estas se les llama KPI (Key Performance Indicator). Entre estas est
 
 
 
-   **_¿Qué patrones se pueden emplear?_**
+**_¿Qué patrones se pueden emplear?_**
    
    Hay dos tipos de patrones, aquellos **generales** y aquellos **específicos** al software.
    
-   _Los generales son los siguientes:_
+   _Los **generales** son:_
    
    * Failover (Si el servidor primario falla, entonces el servidor en espera debería comenzar)
    * Failback (Es el proceso de resincronización de los datos a la ubicación principal)
-   * Replication 
-   * Redundancy
+   * Replication (permite que un servidor principal, conocido como publicador, distribuya datos a uno o varios servidores secundarios o suscriptores)
+   * Redundancy (comprenden la capacidad de un sistema de comunicaciones para detectar un fallo en la red de la manera más rápida posible)
    * Virtualization
    * Continuous Maintenance
    * Corrective Maintenance
    * Preventive Maintenance
    * Perfective Maintenance
+
+![Arquitectura redundante](/imagenes/redundancia.jpg)
    
-   _Los específicos son:_
+   _Los **específicos** son:_
 
    * Graceful and step-wise functionality degradation pattern
    * Asynchronous and services-based integration with external interfaces
