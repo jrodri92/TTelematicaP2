@@ -297,7 +297,7 @@ Una organización tiene que identificar de forma proactiva las amenazas de vulne
 
 ![Riesgo](/imagenes/OverallRisk.PNG)
 
-###__Principios__
+### __Principios__
 
 *Defensa exhaustiva.
 *Parchar el eslabón más débil.
@@ -310,29 +310,29 @@ Una organización tiene que identificar de forma proactiva las amenazas de vulne
 *Minimización de la superficie de ataque.
 *Plan de fallas.
 
-###__Pruebas__
+### __Pruebas__
 
-*Validación de robustez de la contraseña.
-*Validación de datos entrantes.
-*Validación de autenticación.
-*Validación de la administración de sesión.
-*Chequeos de inyección.
-*Vereificación de solicitud de falsificación (CSRF).
-*Chequeos de cuentas y administración de usuarios.
-*Validaciones de abuso de funcionalidades.
-*Chequeos de encripción de datos sensibles.
-*Procesos de respaldo y recuperación.
-*Chequeos de desbordamiento del buffer.
-*Auditar, registrar y manejar ecepciones.
-*Manejo de DoS.
-*Parches y actualizaciones.
-*Refuerzo de políticas de seguridad.
-*Validación del servicio.
-*Seguridad a nivel de firewall, puertos y protocolos.
-*Seguridad a nivel de transporte.
-*Configuración de seguridad.
+* Validación de robustez de la contraseña.
+* Validación de datos entrantes.
+* Validación de autenticación.
+* Validación de la administración de sesión.
+* Chequeos de inyección.
+* Vereificación de solicitud de falsificación (CSRF).
+* Chequeos de cuentas y administración de usuarios.
+* Validaciones de abuso de funcionalidades.
+* Chequeos de encripción de datos sensibles.
+* Procesos de respaldo y recuperación.
+* Chequeos de desbordamiento del buffer.
+* Auditar, registrar y manejar ecepciones.
+* Manejo de DoS.
+* Parches y actualizaciones.
+* Refuerzo de políticas de seguridad.
+* Validación del servicio.
+* Seguridad a nivel de firewall, puertos y protocolos.
+* Seguridad a nivel de transporte.
+* Configuración de seguridad.
 
-###__Herramientas__
+### __Herramientas__
 
-*Análisis de código estático.
-*Prueba de penetración de caja negra.
+* Análisis de código estático.
+* Prueba de penetración de caja negra.
