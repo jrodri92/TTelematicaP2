@@ -287,11 +287,11 @@ Los datos comerciales, la información personal del usuario y los datos de propi
 
 * __Monitoreo de seguridad:__ La seguridad es un asunto continuo, después del despliegue, la aplicación debe ser monitorizada en busca de cualquier tipo de incidente de seguridad.
 
-	__Vulnerabilidad:__ Una falla inherente o debilidad que permite que ocurran los incidentes de seguridad.
-	__Amenaza:__ La fuente o agente responsable del incidente de seguridad.
+	__Vulnerabilidad:__ Una falla inherente o debilidad que permite que ocurran los incidentes de seguridad.  
+	__Amenaza:__ La fuente o agente responsable del incidente de seguridad.  
 	__Riesgo:__ La probabilidad de ocurrencia de ataques de seguridad.
 
-Una organización tiene que identificar de forma proactiva las amenazas de vulnerabilidad de sus aplicaciones y realizar **evaluación de riesgos**. La evaluación de riesgos calcula el riesgo global como un factor de probabilidad de riesgo e impacto del riesgo. El equipo de seguridad debe diseñar los principios y pautas de seguridad para una alta prioridad del riesgo.
+Se debe identificar de forma proactiva las amenazas de vulnerabilidad de sus aplicaciones y realizar **evaluación de riesgos**. La evaluación de riesgos calcula el riesgo global como un factor de probabilidad de riesgo e impacto del riesgo. El equipo de seguridad debe diseñar los principios y pautas de seguridad para una alta prioridad del riesgo.
 
 	Riesgo general = Probabilidad de riesgo X Impacto de riesgo
 
@@ -299,16 +299,16 @@ Una organización tiene que identificar de forma proactiva las amenazas de vulne
 
 ### __Principios__
 
-*Defensa exhaustiva.
-*Parchar el eslabón más débil.
-*El mínimo privilegio.
-*Compartimentalización.
-*Punto de entrada de acceso individual.
-*Gestión de la administración de seguridad.
-*Soporte para extensibilidad.
-*Validación de datos de usuario.
-*Minimización de la superficie de ataque.
-*Plan de fallas.
+* Defensa exhaustiva.
+* Parchar el eslabón más débil.
+* El mínimo privilegio.
+* Compartimentalización.
+* Punto de entrada de acceso individual.
+* Gestión de la administración de seguridad.
+* Soporte para extensibilidad.
+* Validación de datos de usuario.
+* Minimización de la superficie de ataque.
+* Plan de fallas.
 
 ### __Pruebas__
 
