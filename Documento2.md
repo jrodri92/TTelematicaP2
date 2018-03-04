@@ -1,4 +1,4 @@
-* Atributos de calidad seleccionados
+﻿* Atributos de calidad seleccionados
 
 | Atributo       | Estudiante                  |
 | -------------  |:---------------------------:|
@@ -259,14 +259,14 @@ Entre otras pautas que podrá conocer en el capitulo de rendimiento del libro:
 
 **_QA - 3 Seguridad:_** *¿Qué es?*
 
+La seguridad es un elemento clave de toda aplicación, es uno de los elementos principales que tienen un profundo impacto en el éxito general de la misma.
+
 Toda **estrategia** de seguridad debe comprender los siguientes aspectos:
 
 **Confidencialidad:** Los datos no se deben divulgar a usuarios no autorizados o sin intención.
-Los datos comerciales, la información personal del usuario y los datos de propiedad intelectual se incluirán en
-esta categoría.
+Los datos comerciales, la información personal del usuario y los datos de propiedad intelectual se incluirán en esta categoría.
 
-**Integridad:** Los datos no deben ser modificados involuntariamente por usuarios no autorizados.
-La integridad de los datos se debe mantener cuando los datos se transmiten y cuando son consultados.
+**Integridad:** Los datos no deben ser modificados involuntariamente o por usuarios no autorizados. La integridad de los datos se debe mantener cuando los datos se transmiten y cuando son consultados.
 
 **Disponibilidad:** Los datos y servicios deberían estar funcionando todo el tiempo.
 
@@ -275,19 +275,64 @@ La integridad de los datos se debe mantener cuando los datos se transmiten y cua
 
 ### **Etapas de una estrategia de seguridad**
 
-* Análisis de seguridad.
+* __Análisis de seguridad:__ Se deben comprender todos los requerimientos de seguridad que aplican. Las políticas y estándares de seguridad son incorporados como requerimientos, y se consideran los riesgos potenciales que enfrentará la aplicación
 
-* Modelado de amenazas.
+* __Modelado de amenazas:__ Se analizan todas las amenazas internas y externas y se identifican y modelan las amenzas y riesgos principales. Se categorizan y priorizan los riesgos y amenazas basado en su probabilidad de ocurrencia y el material de impacto.
 
-* Diseño de seguridad.
+* __Diseño de seguridad:__ Se identifican los escenarios para los principios clave. Se disponen los principios y políticas de control de seguridad basado en las recomendaciones hechas en la fase anterior. Las políticas se enfocan principalmente en prevención, detección y recuperación de incidentes de seguridad.
 
-* Implementación de seguridad.
+* __Implementación de seguridad:__ Medidas exhaustivas de seguridad serán implenetadas en todas las capas. La lista de desarrollo seguro identificada en la primera etapa debe ser seguida estrictamente durante todo el desarrollo de la aplicación.
 
-* Pruebas de seguridad.
+* __Pruebas de seguridad:__ Hackers éticos internos y externos y expertos en seguridad deben ejecutar test de seguridad y también se usan herramientas para el análisis de código y descubrir vulnerabilidades.
 
-* Monitoreo de seguridad.
+* __Monitoreo de seguridad:__ La seguridad es un asunto continuo, después del despliegue, la aplicación debe ser monitorizada en busca de cualquier tipo de incidente de seguridad.
 
-Una organización tiene que identificar de forma proactiva las amenazas de vulnerabilidad
-de sus aplicaciones y realizar **evaluación de riesgos**. La evaluación de riesgos calcula el riesgo global
-como un factor de probabilidad de riesgo e impacto del riesgo. El equipo de seguridad debe diseñar los
-principios y pautas de seguridad para una alta prioridad del riesgo.
+	__Vulnerabilidad:__ Una falla inherente o debilidad que permite que ocurran los incidentes de seguridad.
+	__Amenaza:__ La fuente o agente responsable del incidente de seguridad.
+	__Riesgo:__ La probabilidad de ocurrencia de ataques de seguridad.
+
+Una organización tiene que identificar de forma proactiva las amenazas de vulnerabilidad de sus aplicaciones y realizar **evaluación de riesgos**. La evaluación de riesgos calcula el riesgo global como un factor de probabilidad de riesgo e impacto del riesgo. El equipo de seguridad debe diseñar los principios y pautas de seguridad para una alta prioridad del riesgo.
+
+	Riesgo general = Probabilidad de riesgo X Impacto de riesgo
+
+![Riesgo](/imagenes/OverallRisk.PNG)
+
+###__Principios__
+
+*Defensa exhaustiva.
+*Parchar el eslabón más débil.
+*El mínimo privilegio.
+*Compartimentalización.
+*Punto de entrada de acceso individual.
+*Gestión de la administración de seguridad.
+*Soporte para extensibilidad.
+*Validación de datos de usuario.
+*Minimización de la superficie de ataque.
+*Plan de fallas.
+
+###__Pruebas__
+
+*Validación de robustez de la contraseña.
+*Validación de datos entrantes.
+*Validación de autenticación.
+*Validación de la administración de sesión.
+*Chequeos de inyección.
+*Vereificación de solicitud de falsificación (CSRF).
+*Chequeos de cuentas y administración de usuarios.
+*Validaciones de abuso de funcionalidades.
+*Chequeos de encripción de datos sensibles.
+*Procesos de respaldo y recuperación.
+*Chequeos de desbordamiento del buffer.
+*Auditar, registrar y manejar ecepciones.
+*Manejo de DoS.
+*Parches y actualizaciones.
+*Refuerzo de políticas de seguridad.
+*Validación del servicio.
+*Seguridad a nivel de firewall, puertos y protocolos.
+*Seguridad a nivel de transporte.
+*Configuración de seguridad.
+
+###__Herramientas__
+
+*Análisis de código estático.
+*Prueba de penetración de caja negra.
