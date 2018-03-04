@@ -29,6 +29,15 @@
 
 | Escenario | 1 |
 | --- | --- |
+| Fuente del estímulo | Usuario |
+| Estímulo | Se registra o conecta |
+| Artefacto | Servidor |
+| Ambiente | Operación normal |
+| Respuesta | Se procesa el registro o logueo |
+| Medida de Respuesta | Tiempo de respuesta promedio de 3 segundos |
+
+| Escenario | 2 |
+| --- | --- |
 | Fuente del estímulo | Aplicación |
 | Estímulo | Sobrecarga de tráfico |
 | Artefacto | Servidor |
@@ -37,7 +46,7 @@
 | Medida de Respuesta | Aumenta la capacidad de carga |
 
 
-| Escenario | 2 |
+| Escenario | 3 |
 | --- | --- |
 | Fuente del estímulo | Google Maps API |
 | Estímulo | Fallo al mostrar el mapa |
@@ -47,7 +56,7 @@
 | Medida de Respuesta | Tiempo de respuesta del API de Google Maps |
 
 
-| Escenario | 3 |
+| Escenario | 4 |
 | --- | --- |
 | Fuente del estímulo | Aplicación |
 | Estímulo | Sobrecarga de datos |
