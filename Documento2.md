@@ -8,6 +8,56 @@
 
 # 1. Análisis: Mediante escenarios y/o propuesta en marco de referencia.
 
+-----------------
+### Borrar este primero
+
+
+| Escenario | 1 |
+| --- | --- |
+| Fuente del estímulo | quien o que genera el estímulo |
+| Estímulo | lo que se quiere llevar a cabo |
+| Artefacto | parte del sistema que recibe el estímulo |
+| Ambiente | condiciones dentro de las cuales se presenta el estímulo |
+| Respuesta | actividad que ocurre luego de la llegada del estímulo |
+| Medida de Respuesta | criterio para testear el requerimiento |
+
+-------------------------
+
+## QA - Disponibilidad
+
+## QA - Rendimiento
+
+| Escenario | 1 |
+| --- | --- |
+| Fuente del estímulo | Aplicación |
+| Estímulo | Sobrecarga de tráfico |
+| Artefacto | Servidor |
+| Ambiente | Crecimiento de visitas |
+| Respuesta | Balanceador de carga envia requerimientos a otros servidores |
+| Medida de Respuesta | Aumenta la capacidad de carga |
+
+
+| Escenario | 2 |
+| --- | --- |
+| Fuente del estímulo | Google Maps API |
+| Estímulo | Fallo al mostrar el mapa |
+| Artefacto | Aplicación |
+| Ambiente | Tiempo de carga superior a 5 segundos |
+| Respuesta | Cancelar carga y solicitar recarga de pagina al usuario |
+| Medida de Respuesta | Tiempo de respuesta del API de Google Maps |
+
+
+| Escenario | 3 |
+| --- | --- |
+| Fuente del estímulo | Aplicación |
+| Estímulo | Sobrecarga de datos |
+| Artefacto | Servidor |
+| Ambiente | Multiples usuarios enviando ubicación a tiempo real |
+| Respuesta | Implementar sistemas de colas para envio y recepción de datos |
+| Medida de Respuesta | Mejora el tiempo de respuesta al momento de que el usuario envía sus posiciones |
+
+## QA - Seguridad
+
 # 2. Diseño: En Aplicación y en Sistema.
 
 ## Vistas de arquitectura.
