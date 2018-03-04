@@ -29,6 +29,15 @@
 
 | Escenario | 1 |
 | --- | --- |
+| Fuente del estímulo | Usuario |
+| Estímulo | Se registra o conecta |
+| Artefacto | Servidor |
+| Ambiente | Operación normal |
+| Respuesta | Se procesa el registro o logueo |
+| Medida de Respuesta | Tiempo de respuesta promedio de 3 segundos |
+
+| Escenario | 2 |
+| --- | --- |
 | Fuente del estímulo | Aplicación |
 | Estímulo | Sobrecarga de tráfico |
 | Artefacto | Servidor |
@@ -37,7 +46,7 @@
 | Medida de Respuesta | Aumenta la capacidad de carga |
 
 
-| Escenario | 2 |
+| Escenario | 3 |
 | --- | --- |
 | Fuente del estímulo | Google Maps API |
 | Estímulo | Fallo al mostrar el mapa |
@@ -47,7 +56,7 @@
 | Medida de Respuesta | Tiempo de respuesta del API de Google Maps |
 
 
-| Escenario | 3 |
+| Escenario | 4 |
 | --- | --- |
 | Fuente del estímulo | Aplicación |
 | Estímulo | Sobrecarga de datos |
@@ -63,8 +72,44 @@
 ## Vistas de arquitectura.
 ## Patrones de arquitectura.
 ## Best Practices.
+* Uso de cache para guardar la mayor cantidad de componentes posibles y evitar la frecuente descarga de los mismos.
+* Uso de CDN's para aliviar el peso de los archivos y mejorar la velocidad de carga de la aplicación web.
+* Comprimir codigos de javascript y css.
+* Importar scripts al final del body y no en el head del HTML con el fin de que la renderización de la pagina no dependa de la carga de los scripts y se garantice un buen funcionamiento de estos.
+
 ## Tácticas.
+
+### Disponibilidad
+
+### Rendimiento
+
+#### Controlar la demanda de recursos
+Esto se puede hacer reduciendo la cantidad de eventos procesados aplicando una tasa de muestreo, o limitando la velocidad a la que el sistema responde a eventos, para esto se pueden seguir ciertos criterios:
+* Administrar la frecuencia de muestreo.
+* Limitar eventos de respuesta.
+* Priorizar los eventos.
+* Limitar tiempos de ejecución
+* Aumentar la eficiencia de los recursos
+
+### Administrar los recursos.
+De no ser posible controlar la demanda de recursos, aún se puede administrar los recursos tales como la memoria, los procesadores, entre otros. Para ello se pueden usar las siguientes tácticas: 
+* **Incrementar los recursos:** Agregar procesadores más rapidos, más memoria y almacenamiento.
+* Tener multiples servidores y un balanceador de carga.
+
+### Otras tácticas que se usarán
+* **First-in, First-out (FIFO):** Estructuras de colas que priorizan los primeros datos que entrán, serán los primeros en ser procesados por el servidor, dejando los demás en espera, pero sin afectar al cliente y su interactividad con la aplicación.
+* **Data-push y no Data-pull (carga bajo demanda):** Hacer envio de los datos a medida de que el usuario los vaya solicitando.
+* **Pensar en Caché:** Tener almacenamiento en cache, es decir, tener la mayor cantidad posible de componentes y paginas importantes bajo una estrategia de almacenamiento en caché.
+* **Diseño para el fracaso:** Evaluar todas las posibilidades de fracaso y su probabilidad probable. Algunos eventos comunes de falla pueden ser fallos de hardware, fallos de seguridad, desastres naturales, repunte repentino del tráfico de usuarios, fallos de red, fallos de operaciones, etc. Está muy lidago al control de demanda de recursos.
+* **Computación distribuida y paralela:** Diseñe software para que su computación pueda distribuirse a través de múltiples nodos de computación. Esto ofrece la doble ventaja de rendimiento y escalabilidad.
+* **Mantenerse liviano:** los componentes páginas clave deben mantenerse ligeros reduciendo su tamaño general y minimizando el número de viajes de ida y vuelta del servidor.
+
+### Seguridad
+
 ## Herramientas.
+* **Jmeter:** Usado para enviar multiples requerimientos al servidor y así medir su rendimiento ("estresar sistemas"). 
+* **JProfiler:** Muestra el consumo de memoria, al igual que otros componentes de la aplicación.
+* **FindBugs:** Durante análisis estáticos, analiza escenarios de casos con concurrencia.
 
 # 3. Marco de referencia v1 ---- Falta implementar la v2 ----
 
