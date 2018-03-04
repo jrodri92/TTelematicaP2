@@ -1,2 +1,2 @@
-tmp/
-*.log
+proyectoGPS/tmp/*
+database.yml
