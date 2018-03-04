@@ -77,6 +77,34 @@
 * Comprimir codigos de javascript y css.
 * Importar scripts al final del body y no en el head del HTML con el fin de que la renderización de la pagina no dependa de la carga de los scripts y se garantice un buen funcionamiento de estos.
 
+### Seguridad.
+
+#### En Aplicación.
+
+* Validación de robustez de contraseña.
+* Validación de entradas.
+* Validación de autenticación.
+* Validación de administración de sesión.
+* Chequeos de inyección.
+* Validación de CSRF.
+* Chequeos de cuentas y administración de usuarios.
+* Validación de abuso de funcionalildades.
+* Chequeos de encriptación.
+
+#### En sistema.
+
+* Encripción de datos sensibles.
+* Procesos de respaldo y restauración.
+* Chequeos de sobrecarga de buffer.
+* Auditar, registrar y manejar excepciones.
+* Manejo de negación de servicios.
+* Parcheado y actualizaciones.
+* Refuerzo de políticas de seguridad.
+* Validación del servicio.
+* Seguridad a nivel de firewall, puerto y protocolo.
+* Seguridad a nivel de transporte.
+* Configuración de seguridad.
+
 ## Tácticas.
 
 ### Disponibilidad
@@ -105,6 +133,17 @@ De no ser posible controlar la demanda de recursos, aún se puede administrar lo
 * **Mantenerse liviano:** los componentes páginas clave deben mantenerse ligeros reduciendo su tamaño general y minimizando el número de viajes de ida y vuelta del servidor.
 
 ### Seguridad
+
+* __Defensa en profundiad:__ Políticas de seguridad en todas las capas, componentes, sistemas y servicios usando técnicas, políticas y operaciones de seguridad adecuadas.
+* __Parchear el eslabón más débil:__ Identificar y arreglar el punto más vulnerable en la cadena de extremo a extremo de los componentes del negocio.
+* __Principio del privilegio mínimo:__ Por defecto, un usuario o rol de seguridad debe tener el mínimo privilegio para un recurso o función. Los privilegios no se elevarán automáticamente por maneras directas o indirectas y se debe mantener una política de negación por defecto. La información sólo se debe distribuír con la base de "lo que necesita saber".
+* __Compartimentalización:__ Todos los recursos y funciones de software y hardware deben ser categorizados en varias clasificaciones de seguridad, y el acceso debe ser restringido a los usuarios con roles y privilegios apropiados.
+* __Punto de entrada de acceso individual:__ La aplicación debe permitir accedes solo a los usuarios por un punto individual de autenticación.
+* __Gestión de la administración de seguridad:__ El sistema debe proveer una visión holística de funcionalidad de administración para manejar funcionalidades de seguridad importantes.
+* __Soporte para extensibilidad:__ El marco de seguridad debe soportar un plug-in de modelo de bases estandar donde es posible escribir extensiones insertables personalizadas para mejorar características de seguridad.
+* __Validación de datos de usuario:__ Los datos ingresados por el usuario deben ser validados y limpiados a fondo en varios niveles. Los datos también deben ser codificados adecuadamente cuando se almacenan y se transfieren a varias capas.
+* __Minimización de la superficie de ataque:__ Minimizar los puntos de entrada para usuarios públicos y retener únimamente la mínima cantidad de datos, servicios y funcionalidades expuesta a usuarios no autorizados.
+* __Plan para fallas:__ Diseñar planes de contingencia para todos los escenarios posibles de falla de seguridad. Es posible minimizar el impacto de insidentes de seguridad usando rutinas robustas para manejo de errores, respaldo de los datos, ambiente de recuperación de desastres y defensa en profundidad.
 
 ## Herramientas.
 * **Jmeter:** Usado para enviar multiples requerimientos al servidor y así medir su rendimiento ("estresar sistemas"). 
