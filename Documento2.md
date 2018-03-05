@@ -9,7 +9,7 @@
 # 1. Análisis: Mediante escenarios y/o propuesta en marco de referencia.
 
 -----------------
-*Para identificar los escenarios de calidad se seguirá la siguiente estructura:*
+**Para identificar los escenarios de calidad se seguirá la siguiente estructura:**
 
 
 | Escenario | # |
@@ -36,20 +36,38 @@ pidiéndole que trate de acceder más tarde.
 | Fuente del estímulo | Interacción del/los usuario(s) |
 | Estímulo | Acceder a la aplicación |
 | Artefacto | Servidor web |
-| Ambiente | Normales |
+| Ambiente | Operación normal |
 | Respuesta | Visualización e interacción con la aplicación o denegación del servicio |
 | Medida de Respuesta | Denegar el servicio de la aplicación el menor tiempo posible |
+
 
 | Escenario | 2 |
 | --- | --- |
-| Fuente del estímulo | Interacción del/los usuario(s) |
-| Estímulo | Acceder a la aplicación |
-| Artefacto | Servidor web |
-| Ambiente | Normales |
-| Respuesta | Visualización e interacción con la aplicación o denegación del servicio |
-| Medida de Respuesta | Denegar el servicio de la aplicación el menor tiempo posible |
+| Fuente del estímulo | Aplicación |
+| Estímulo | Inserción/consulta/actualización de datos |
+| Artefacto | Servidor de datos (GBD: PostgreSql |
+| Ambiente | Operación normal |
+| Respuesta | No es posible conectarse con la base de datos |
+| Medida de Respuesta | Se visualiza en pantalla u mensaje de fallo a la conexión con la BD (Queda regitro de lo sucedido en el archivo log|
 
 
+| Escenario | 3 |
+| --- | --- |
+| Fuente del estímulo | Aplicación |
+| Estímulo | La aplicción intenta pintar los marcadores en el mapa usando la API de Google |
+| Artefacto | Sistema externo API Google maps |
+| Ambiente | Operación normal |
+| Respuesta | Se notifica en pantalla al usuario sobre el error de respuesta por parte de la API y se le solicita cargar de nuevo el navegador web |
+| Medida de Respuesta | Despues del usuaio recargar el navegador la API de Google maps deberá responder en 1 o 2 segundos |
+
+| Escenario | 4 |
+| --- | --- |
+| Fuente del estímulo | Servidor web envía solicitud de carga de datos (conexión a la BD) |
+| Estímulo | Servidor de datos falla en respuesta de datos de ubicación según petición del servidor web |
+| Artefacto | Servidor Web |
+| Ambiente | Sobre carga de tráfico |
+| Respuesta | El balanceador de cargas aisla el servidor de datos y redirecciona las peticiones |
+| Medida de Respuesta | Tiempo de respesta cae en un 20% y se corre protocolo de recupración |
 
 ## QA - Rendimiento
 
