@@ -71,7 +71,7 @@ pidiéndole que trate de acceder más tarde.
 
 ### Tácticas para garantizar la disponibilidad
 
-      ![Arquitectura redundante](/imagenes/ArbolUtiliQADispo.jpg)
+![Arbol de utilidad - Disponibilidad](/imagenes/ArbolUtiliQADispo.jpg)
       
       
 ## QA - Rendimiento
