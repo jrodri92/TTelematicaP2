@@ -190,6 +190,7 @@ Degradado mientras se repara |
 ## Vistas de arquitectura.
 
 ![Conceptual view](/imagenes/ConceptualView.png)
+__Vista conceptual proyecto gps__
 
 ## Patrones de arquitectura.
 ## Best Practices.
