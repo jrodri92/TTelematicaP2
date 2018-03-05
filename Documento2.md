@@ -187,10 +187,19 @@ Degradado mientras se repara |
 
 # 2. Diseño: En Aplicación y en Sistema.
 
+Al ser una aplicación web desarrollada en RoR hemos implementado el patrón de arquitectura MVC.
+
 ## Vistas de arquitectura.
 
+_Vista conceptual proyecto gps_
+
 ![Conceptual view](/imagenes/ConceptualView.png)
-__Vista conceptual proyecto gps__
+
+
+_Vista física proyecto gps_
+
+![Physical view](/imagenes/PhysicalView.png)
+
 
 ## Patrones de arquitectura.
 ## Best Practices.
