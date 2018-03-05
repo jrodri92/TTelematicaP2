@@ -67,6 +67,61 @@
 
 ## QA - Seguridad
 
+| Escenario | 1 									     |
+| --------- | ------------------------------------------------------------------------------ |
+| Fuente    | Usuario 									     |
+| Estímulo  | Se registra  								     |
+| Artefacto | Aplicación 								     |
+| Ambiente  | Operación normal                                                               |
+| Respuesta | Se verifica la robustez de contraseña, cifra y se envían los datos al servidor |
+| Medida    | Se crean los registros con los datos de usuario en la base de datos            |
+
+| Escenario | 2											  |
+| --------- | ----------------------------------------------------------------------------------- |
+| Fuente    | Usuario										  |
+| Estímulo  | Envía datos para ingresar a la aplicación						  |
+| Artefacto | Servidor										  |
+| Ambiente  | Operación normal									  |
+| Respuesta | El servidor obtiene los datos del usuario y busca coinsidencias en la base de datos |
+| Medida    | El 95% de usuarios con datos correctos ingresa al sistema al primer intento	  |
+
+| Escenario | 3									      |
+| --------- | ----------------------------------------------------------------------- |
+| Fuente    | Usuario								      |
+| Estímulo  | Envía datos erróneos para ingresar a la aplicación		      |
+| Artefacto | Servidor								      |
+| Ambiente  | Operación normal							      |
+| Respuesta | El servidor obtiene los datos y busca coinsidencias en la base de datos |
+| Medida    | El 100% de los usuarios con datos erróneos no ingresan al sistema	      |
+
+| Escenario | 4										        |
+| --------- | --------------------------------------------------------------------------------- |
+| Fuente    | Usuario									        |
+| Estímulo  | Envío de datos								        |
+| Artefacto | Aplicación								        |
+| Ambiente  | Operación normal								        |
+| Respuesta | La aplicación utiliza una conexión segura HTTPS para enviar los datos al servidor |
+| Medida    | Los datos se envían de manera segura					        |
+
+| Escenario | 5													       |
+| --------- | -------------------------------------------------------------------------------------------------------- |
+| Fuente    | Aplicación											       |
+| Estímulo  | Usuario inactivo											       |
+| Artefacto | Servidor												       |
+| Ambiente  | Operación normal											       |
+| Respuesta | El servidor elimina la sesión del usuario								       |
+| Medida    | Los uaurios que estén inactivos durante 10 minutos perderán su sesión actual y deberán ingresar de nuevo |
+
+| Escenario | 6										       |
+| --------- | -------------------------------------------------------------------------------- |
+| Fuente    | Persona no autorizada							       |
+| Estímulo  | Ingreso a la base de datos						       |
+| Artefacto | Base de datos								       |
+| Ambiente  | Operación normal								       |
+| Respuesta | La conexión a base de datos requiere usuario y contraseña			       |
+| Medida    | Todos los intentos de conexión a base de datos con datos erróneos son rechazados |
+
+
 # 2. Diseño: En Aplicación y en Sistema.
 
 ## Vistas de arquitectura.
@@ -150,7 +205,7 @@ De no ser posible controlar la demanda de recursos, aún se puede administrar lo
 * **JProfiler:** Muestra el consumo de memoria, al igual que otros componentes de la aplicación.
 * **FindBugs:** Durante análisis estáticos, analiza escenarios de casos con concurrencia.
 
-# 3. Marco de referencia v1 ---- Falta implementar la v2 ----
+# 3. Marco de referencia v2
 
 **_QA - 1 Disponibilidad:_** *¿Qué es?*
 
