@@ -45,7 +45,7 @@ pidiéndole que trate de acceder más tarde.
 | --- | --- |
 | Fuente del estímulo | Aplicación |
 | Estímulo | Inserción/consulta/actualización de datos |
-| Artefacto | Servidor de datos (GBD: PostgreSql |
+| Artefacto | Servidor de datos (GBD: PostgreSql) |
 | Ambiente | Operación normal |
 | Respuesta | No es posible conectarse con la base de datos |
 | Medida de Respuesta | Se visualiza en pantalla u mensaje de fallo a la conexión con la BD (Queda regitro de lo sucedido en el archivo log|
@@ -58,7 +58,7 @@ pidiéndole que trate de acceder más tarde.
 | Artefacto | Sistema externo API Google maps |
 | Ambiente | Operación normal |
 | Respuesta | Se notifica en pantalla al usuario sobre el error de respuesta por parte de la API y se le solicita cargar de nuevo el navegador web |
-| Medida de Respuesta | Despues del usuaio recargar el navegador la API de Google maps deberá responder en 1 o 2 segundos |
+| Medida de Respuesta | Despues del usuario recargar el navegador web la API de Google maps deberá responder en 1 o 2 segundos |
 
 | Escenario | 4 |
 | --- | --- |
@@ -69,6 +69,11 @@ pidiéndole que trate de acceder más tarde.
 | Respuesta | El balanceador de cargas aisla el servidor de datos y redirecciona las peticiones |
 | Medida de Respuesta | Tiempo de respesta cae en un 20% y se corre protocolo de recupración |
 
+### Tácticas para garantizar la disponibilidad
+
+      ![Arquitectura redundante](/imagenes/ArbolUtiliQADispo.jpg)
+      
+      
 ## QA - Rendimiento
 
 | Escenario | 1 |
