@@ -9,10 +9,10 @@
 # 1. Análisis: Mediante escenarios y/o propuesta en marco de referencia.
 
 -----------------
-### Borrar este primero
+*Para identificar los escenarios de calidad se seguirá la siguiente estructura:*
 
 
-| Escenario | 1 |
+| Escenario | # |
 | --- | --- |
 | Fuente del estímulo | quien o que genera el estímulo |
 | Estímulo | lo que se quiere llevar a cabo |
@@ -24,6 +24,32 @@
 -------------------------
 
 ## QA - Disponibilidad
+
+El sistema deberá facilitar una alta disponibilidad, el portal será accesible el
+99% del tiempo, en alguna de esas ocasiones la página no será visible y en otras
+el servicio será denegado al usuario por mantenimiento y/o tiempos fuera de servicio,
+pidiéndole que trate de acceder más tarde.
+
+
+| Escenario | 1 |
+| --- | --- |
+| Fuente del estímulo | Interacción del/los usuario(s) |
+| Estímulo | Acceder a la aplicación |
+| Artefacto | Servidor web |
+| Ambiente | Normales |
+| Respuesta | Visualización e interacción con la aplicación o denegación del servicio |
+| Medida de Respuesta | Denegar el servicio de la aplicación el menor tiempo posible |
+
+| Escenario | 2 |
+| --- | --- |
+| Fuente del estímulo | Interacción del/los usuario(s) |
+| Estímulo | Acceder a la aplicación |
+| Artefacto | Servidor web |
+| Ambiente | Normales |
+| Respuesta | Visualización e interacción con la aplicación o denegación del servicio |
+| Medida de Respuesta | Denegar el servicio de la aplicación el menor tiempo posible |
+
+
 
 ## QA - Rendimiento
 
