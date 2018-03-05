@@ -67,7 +67,21 @@ pidiéndole que trate de acceder más tarde.
 | Artefacto | Servidor Web |
 | Ambiente | Sobre carga de tráfico |
 | Respuesta | El balanceador de cargas aisla el servidor de datos y redirecciona las peticiones |
-| Medida de Respuesta | Tiempo de respesta cae en un 20% y se corre protocolo de recupración |
+| Medida de Respuesta | Tiempo de respuesta cae en un 20% y se corre protocolo de recupración |
+
+
+| Escenario | 5 |
+| --- | --- |
+| Fuente del estímulo | Interna al sistema - Tiempo de respuesta |
+| Estímulo | Crash del sistema al desplegar la aplicación |
+| Artefacto | Servidor DCA |
+| Ambiente | Funcionalidad del DCA limitada |
+| Respuesta | Registrarlo, Notificar a quienes corresponda, incluyendo el usuario y otros sistemas, 
+Deshabilitar las fuentes de eventos que causan el defecto o falla de acuerdo a las reglas definidas, 
+Quedar no disponible por un intervalo de tiempo, hasta que se repare, Continuar la operación en Modo
+Degradado mientras se repara |
+| Medida de Respuesta | Tiempo máximo para reparar la falla 5 5 segundos|
+
 
 ### Tácticas para garantizar la disponibilidad
 
@@ -174,6 +188,9 @@ pidiéndole que trate de acceder más tarde.
 # 2. Diseño: En Aplicación y en Sistema.
 
 ## Vistas de arquitectura.
+
+![Conceptual view](/imagenes/ConceptualView.png)
+
 ## Patrones de arquitectura.
 ## Best Practices.
 * Uso de cache para guardar la mayor cantidad de componentes posibles y evitar la frecuente descarga de los mismos.
