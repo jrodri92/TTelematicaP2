@@ -5,11 +5,25 @@ Rails.application.routes.draw do
   
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'index#index'
+  
+ # root 'index#index'
+ # scope '/proyectoGPS' do
+ #   get 'index/index'
+ #   resources :positions
+ #   root 'index#index'
+ # end
 
-  get '/positions' => 'positions#new'
-  get '/map' => 'positions#show'
+ #  get '/positions' => 'positions#new'
+ #  get '/map' => 'positions#show'
 
-  post '/positions' => 'positions#create'
+ #  post '/positions' => 'positions#create'
+	
+ scope '/proyectoGPS' do
+    get '/positions' => 'positions#new'
+    get '/map' => 'positions#show'
+    post '/positions' => 'positions#create'
+    resources :positions
+    root 'index#index'
+  end
 
 end
