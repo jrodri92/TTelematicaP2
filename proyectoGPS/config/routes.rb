@@ -9,7 +9,6 @@ Rails.application.routes.draw do
 
   get '/positions' => 'positions#new'
   get '/map' => 'positions#show'
-
   post '/positions' => 'positions#create'
 
 end
