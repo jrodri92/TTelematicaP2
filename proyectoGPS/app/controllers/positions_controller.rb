@@ -1,5 +1,7 @@
 class PositionsController < ApplicationController
 
+  before_action :find_user
+
   def new
     @position = Position.new
   end

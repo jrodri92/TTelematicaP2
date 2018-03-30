@@ -31759,3 +31759,969 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 511ms (Views: 449.4ms | ActiveRecord: 22.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-29 23:18:52 -0500
+  [1m[35m (70.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (46.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1776.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "proyectoGPS_development"[0m
+  [1m[35m (906.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "proyectoGPS_test"[0m
+  [1m[35m (11201.3ms)[0m  [1m[35mCREATE DATABASE "proyectoGPS_development" ENCODING = 'unicode'[0m
+  [1m[35m (7250.0ms)[0m  [1m[35mCREATE DATABASE "proyectoGPS_test" ENCODING = 'unicode'[0m
+  [1m[35m (196.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (186.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4086041687435014545)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePositions (20180209153028)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (169.6ms)[0m  [1m[35mCREATE TABLE "positions" ("id" bigserial primary key, "user_id" integer, "lat" character varying, "lon" character varying, "day" date, "hour" time, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (48.7ms)[0m  [1m[35mCREATE  INDEX  "index_positions_on_user_id" ON "positions"  ("user_id")[0m
+  [1m[35m (219.0ms)[0m  [1m[35mALTER TABLE "positions" ADD CONSTRAINT "fk_rails_4e4581e38b"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4086041687435014545)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (759.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "proyectoGPS_development"[0m
+  [1m[35m (353.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "proyectoGPS_test"[0m
+  [1m[35m (6763.3ms)[0m  [1m[35mCREATE DATABASE "proyectoGPS_development" ENCODING = 'unicode'[0m
+  [1m[35m (6341.4ms)[0m  [1m[35mCREATE DATABASE "proyectoGPS_test" ENCODING = 'unicode'[0m
+  [1m[35m (69.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (154.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4086041687435014545)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180330034145)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (87.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "provider" character varying, "uid" character varying, "name" character varying, "oauth_token" character varying, "oauth_expires_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (47.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180330034145"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePositions (20180330043028)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (107.2ms)[0m  [1m[35mCREATE TABLE "positions" ("id" bigserial primary key, "user_id" integer, "lat" character varying, "lon" character varying, "day" date, "hour" time, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (36.1ms)[0m  [1m[35mCREATE  INDEX  "index_positions_on_user_id" ON "positions"  ("user_id")[0m
+  [1m[35m (38.5ms)[0m  [1m[35mALTER TABLE "positions" ADD CONSTRAINT "fk_rails_4e4581e38b"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180330043028"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-30 04:23:49.930139"], ["updated_at", "2018-03-30 04:23:49.930139"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4086041687435014545)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-29 23:24:27 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 178ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-29 23:24:34 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 25746ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `current_user?' for #<#<Class:0x0000000009111dc8>:0x00000000091100e0>
+Did you mean?  current_user
+               current_page?):
+    25:   <body>
+    26:     <nav>
+    27:       <div class="nav-wrapper">
+    28:         <% if current_user? %>
+    29:         Conectado como <strong> <%= current_user.name %> </strong>
+    30:         <ul class="right">
+    31:           <li>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__1406676628_76039760'
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-29 23:27:46 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 519ms (Views: 479.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS/map" for 127.0.0.1 at 2018-03-29 23:30:00 -0500
+Processing by PositionsController#show as HTML
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `positions' for nil:NilClass):
+  
+app/controllers/positions_controller.rb:21:in `show'
+Started GET "/" for 127.0.0.1 at 2018-03-29 23:31:37 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 111ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-29 23:43:04 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 106ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-29 23:43:18 -0500
+  
+SyntaxError (C:/Users/EDISON/Desktop/GIT/TTelematicaP2/proyectoGPS/app/controllers/application_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/index_controller.rb:1:in `<top (required)>'
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-29 23:43:22 -0500
+  
+SyntaxError (C:/Users/EDISON/Desktop/GIT/TTelematicaP2/proyectoGPS/app/controllers/application_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/index_controller.rb:1:in `<top (required)>'
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-29 23:43:58 -0500
+Processing by IndexController#index as HTML
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `redirect' for #<IndexController:0x0000000013c77d48>
+Did you mean?  redirect_to):
+  
+app/controllers/application_controller.rb:13:in `find_user'
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:01:59 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 243ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:05 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 58ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:06 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:07 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:07 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:08 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:08 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:09 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:10 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:10 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:11 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:11 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:12 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:13 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:13 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:14 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:15 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:15 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:16 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:17 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:17 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:18 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:19 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:19 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:20 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:21 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:21 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:22 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:22 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:23 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:24 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:24 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 29ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:25 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:25 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:26 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:27 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:27 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:28 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:28 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:29 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:30 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:30 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:36 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:37 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:38 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:39 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 31ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:40 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:41 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:41 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:42 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:43 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:43 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:44 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:44 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:45 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:46 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:46 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:47 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:48 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:48 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:49 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:49 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:02:50 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:21 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:22 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:22 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:23 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:23 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:24 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:25 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:25 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:26 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:26 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:27 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:28 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:28 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 31ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:29 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:30 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:30 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:31 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 52ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:32 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:33 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:33 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:03:34 -0500
+Processing by IndexController#index as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:04:22 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 3285ms (Views: 3188.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS/positions" for 127.0.0.1 at 2018-03-30 00:04:32 -0500
+Processing by PositionsController#new as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 82ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:04:32 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 2300ms (Views: 2256.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS/map" for 127.0.0.1 at 2018-03-30 00:04:37 -0500
+Processing by PositionsController#show as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:04:37 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2309ms (Views: 2273.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS/map" for 127.0.0.1 at 2018-03-30 00:04:49 -0500
+Processing by PositionsController#show as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Filter chain halted as :find_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:04:49 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 804ms (Views: 767.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS/session/create" for 127.0.0.1 at 2018-03-30 00:06:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/proyectoGPS/session/create"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:10:06 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 969ms (Views: 931.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 00:10:11 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 00:10:14 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=1637e9d3e306c9335c82aa73907ace2998b8ab0c7b1db50e&code=4/AAABiyXfqhpM04hYCsvMrtuY_EL2rgZS03GkrG1uusKBqDW11d6rNxB2qGd3ZnT9UuW_OG3huS4mcrGD7feC0BY" for 127.0.0.1 at 2018-03-30 00:10:15 -0500
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"1637e9d3e306c9335c82aa73907ace2998b8ab0c7b1db50e", "code"=>"4/AAABiyXfqhpM04hYCsvMrtuY_EL2rgZS03GkrG1uusKBqDW11d6rNxB2qGd3ZnT9UuW_OG3huS4mcrGD7feC0BY", "provider"=>"google_oauth2"}
+Completed 500 Internal Server Error in 3135ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `env' for #<SessionsController:0x000000000cdca5f8>):
+  
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:11:54 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 382ms (Views: 346.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 00:11:59 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 00:11:59 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=4ef9a5cd03e67a9a1b70a71d321103520b0df1456d887bf8&code=4/AADmXMcgSfia9y3D-4g4G-QOObovnhCIEJvKgpuhX123jJ8KPjH-lJb_ErcgdFi8g9BQPOJVheIBIhlbN3L9JGY" for 127.0.0.1 at 2018-03-30 00:12:00 -0500
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"4ef9a5cd03e67a9a1b70a71d321103520b0df1456d887bf8", "code"=>"4/AADmXMcgSfia9y3D-4g4G-QOObovnhCIEJvKgpuhX123jJ8KPjH-lJb_ErcgdFi8g9BQPOJVheIBIhlbN3L9JGY", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (40.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "google_oauth2"], ["uid", "110557838754033966332"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (84.6ms)[0m  [1m[32mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["provider", "google_oauth2"], ["uid", "110557838754033966332"], ["name", "Edison Zapata"], ["oauth_token", "ya29.GlyOBfz3CJ9GLUoM54FbuNZ68rpZB55pcmR9s6PjYb3mVL0ocOKOPe5A69jH5A-uNrBYytA74UYyaH0ERpWhP43RqC0Q0sxsCzkpCX7Y57iD-vmndzSF8HIwdYdMtQ"], ["oauth_expires_at", "2018-03-30 06:12:00"], ["created_at", "2018-03-30 05:12:02.050962"], ["updated_at", "2018-03-30 05:12:02.050962"]]
+  [1m[35m (154.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 1214ms (ActiveRecord: 716.5ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:12:02 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (20.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered index/index.html.erb within layouts/application (218.6ms)
+Completed 200 OK in 604ms (Views: 453.1ms | ActiveRecord: 69.2ms)
+
+
+Started GET "/proyectoGPS/map" for 127.0.0.1 at 2018-03-30 00:12:09 -0500
+Processing by PositionsController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering positions/show.html.erb within layouts/application
+  [1m[36mPosition Load (140.9ms)[0m  [1m[34mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = $1 AND ("positions"."created_at" BETWEEN $2 AND $3)[0m  [["user_id", 1], ["created_at", "2018-03-30"], ["created_at", "2018-03-31"]]
+  Rendered positions/show.html.erb within layouts/application (189.2ms)
+Completed 200 OK in 942ms (Views: 371.0ms | ActiveRecord: 161.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:12:18 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered index/index.html.erb within layouts/application (93.1ms)
+Completed 200 OK in 456ms (Views: 403.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/proyectoGPS/positions" for 127.0.0.1 at 2018-03-30 00:12:21 -0500
+Processing by PositionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering positions/new.html.erb within layouts/application
+  Rendered positions/new.html.erb within layouts/application (395.0ms)
+Completed 200 OK in 999ms (Views: 941.7ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/proyectoGPS/positions" for 127.0.0.1 at 2018-03-30 00:12:24 -0500
+Processing by PositionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/RkjScR/X3iC+Lt6XUjd0AW5O/VRsPgUICzhCmMGMhzjnS3XWVBUTWoqFZ5+sRYKVWuYStoviOj22U+qSVHD7g==", "position"=>{"user_id"=>"1", "lat"=>"6.244203", "lon"=>"-75.5812119"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (190.2ms)[0m  [1m[32mINSERT INTO "positions" ("user_id", "lat", "lon", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["lat", "6.244203"], ["lon", "-75.5812119"], ["created_at", "2018-03-30 05:12:25.194673"], ["updated_at", "2018-03-30 05:12:25.194673"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+No template found for PositionsController#create, rendering head :no_content
+Started GET "/proyectoGPS/map" for 127.0.0.1 at 2018-03-30 00:12:27 -0500
+Completed 204 No Content in 3320ms (ActiveRecord: 193.2ms)
+
+
+Processing by PositionsController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering positions/show.html.erb within layouts/application
+  [1m[36mPosition Load (18.6ms)[0m  [1m[34mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = $1 AND ("positions"."created_at" BETWEEN $2 AND $3)[0m  [["user_id", 1], ["created_at", "2018-03-30"], ["created_at", "2018-03-31"]]
+  Rendered positions/show.html.erb within layouts/application (93.3ms)
+Completed 200 OK in 564ms (Views: 479.7ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/proyectoGPS/signout" for 127.0.0.1 at 2018-03-30 00:12:35 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:12:35 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 401ms (Views: 347.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:13:09 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 334ms (Views: 292.1ms | ActiveRecord: 0.0ms)
+
+

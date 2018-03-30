@@ -7,8 +7,12 @@
 			Ahora es: <%= Time.now %>
 		</P>
 		<div class="row">
-			<%= link_to "Enviar posición", "proyectoGPS/positions", class:"btn" %>
-			<%= link_to "Mostrar posiciones", "proyectoGPS/map", class:"btn" %>
+			<% if current_user %>
+				<%= link_to "Enviar posición", "proyectoGPS/positions", class:"btn" %>
+				<%= link_to "Mostrar posiciones", "proyectoGPS/map", class:"btn" %>
+			<% else %>
+				<%= link_to "Sing in with Google", "/auth/google_oauth2", id: "sign_in", class:"btn" %>
+			<% end %>
 		</div>
 
 	</div>
