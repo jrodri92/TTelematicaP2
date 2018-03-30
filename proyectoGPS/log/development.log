@@ -32725,3 +32725,171 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 334ms (Views: 292.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:57:46 -0500
+  [1m[35m (29.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 5393ms (Views: 5296.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 00:58:18 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 00:58:19 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=f9504c75dbdcd569cebdc0a0f12febeb560d92e5eb7b92e6&code=4/AAA59ZxBSZAGzECVFOuTMvvabhTfyecVbV9q6mYk1Us2k4FHbuoMyYB53p6TMM86k-s-KzaVrcjfHYidtspVNXQ" for 127.0.0.1 at 2018-03-30 00:58:20 -0500
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"f9504c75dbdcd569cebdc0a0f12febeb560d92e5eb7b92e6", "code"=>"4/AAA59ZxBSZAGzECVFOuTMvvabhTfyecVbV9q6mYk1Us2k4FHbuoMyYB53p6TMM86k-s-KzaVrcjfHYidtspVNXQ", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (20.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "google_oauth2"], ["uid", "110557838754033966332"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (74.5ms)[0m  [1m[33mUPDATE "users" SET "oauth_token" = $1, "oauth_expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["oauth_token", "ya29.GlyOBXPh1BaEkMcBjWinyu2BfhYMWRwS-sOefCS7oJOKTkGJe7nwote-Phdw28YZ3CaFm2_wSd73gaRPG1la8XAEGJrxT97bFEivFqfq-wOexJFewmRsdQOdQEXclQ"], ["oauth_expires_at", "2018-03-30 06:58:19"], ["updated_at", "2018-03-30 05:58:21.481850"], ["id", 1]]
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 398ms (ActiveRecord: 248.3ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 00:58:21 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered index/index.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 475ms (Views: 411.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:00:46 -0500
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered index/index.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 2133ms (Views: 2060.2ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/proyectoGPS/signout" for 127.0.0.1 at 2018-03-30 01:00:54 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:00:55 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 354ms (Views: 312.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 01:01:03 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 01:01:52 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 01:01:52 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:05:48 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 2465ms (Views: 2418.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 01:06:01 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 01:06:02 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=9f3919eaf2dbfd80303ff8717319c3ec60b3e7d2093c9a33&code=4/AAAZp13PBMPo4H7LsIlbA8UCNiZfBQ8r60yGtKUGtNBJik9Gb5jdQ5rMVFKjR1zROxhq33QcimPFla9dzo_3EdY" for 127.0.0.1 at 2018-03-30 01:06:02 -0500
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"9f3919eaf2dbfd80303ff8717319c3ec60b3e7d2093c9a33", "code"=>"4/AAAZp13PBMPo4H7LsIlbA8UCNiZfBQ8r60yGtKUGtNBJik9Gb5jdQ5rMVFKjR1zROxhq33QcimPFla9dzo_3EdY", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "google_oauth2"], ["uid", "110557838754033966332"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (84.9ms)[0m  [1m[33mUPDATE "users" SET "oauth_token" = $1, "oauth_expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["oauth_token", "ya29.GlyOBT_A04i9wr6-6JvmLrJ3m_r6OCoEJO6MqIW94pPcLITXHysU9lYoN85tjjRd365z7uHw0yCxUqIZRIONhB5E7NCVB67321pv2fUha-4P5vKhScFx4-bTG1iGww"], ["oauth_expires_at", "2018-03-30 07:06:02"], ["updated_at", "2018-03-30 06:06:04.021017"], ["id", 1]]
+  [1m[35m (26.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 402ms (ActiveRecord: 215.9ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:06:04 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered index/index.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 489ms (Views: 438.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:10:49 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered index/index.html.erb within layouts/application (173.1ms)
+Completed 200 OK in 3209ms (Views: 3062.0ms | ActiveRecord: 54.1ms)
+
+
+Started GET "/proyectoGPS/signout" for 127.0.0.1 at 2018-03-30 01:11:04 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:11:04 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 344ms (Views: 295.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 01:11:07 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2018-03-30 01:11:08 -0500
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=b8f5803877feee6c28ef8931031fbbc710fe44f292676444&code=4/AABSVCtS5lj3WHYxD8VR81Hrvt0TvtmXWvSBzpLkdPGVmg24PuVyAbXzDE5KwzKRYzFz16KMZZlde2F3y4lBajM" for 127.0.0.1 at 2018-03-30 01:11:09 -0500
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"b8f5803877feee6c28ef8931031fbbc710fe44f292676444", "code"=>"4/AABSVCtS5lj3WHYxD8VR81Hrvt0TvtmXWvSBzpLkdPGVmg24PuVyAbXzDE5KwzKRYzFz16KMZZlde2F3y4lBajM", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "google_oauth2"], ["uid", "110557838754033966332"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (97.7ms)[0m  [1m[33mUPDATE "users" SET "oauth_token" = $1, "oauth_expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["oauth_token", "ya29.GlyOBUO5a0-obYjvtnoNkbnD93gz9E_uvGZFydA-dyJ9VwO64vYdV6y3P54xKvtKZ4bnx3W2w126_9n_W8UzpoL8uPdseFdsEzV5muR5j9RiXERmn3rcxr4R0rgpew"], ["oauth_expires_at", "2018-03-30 07:11:09"], ["updated_at", "2018-03-30 06:11:10.810469"], ["id", 1]]
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 263ms (ActiveRecord: 120.8ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:11:10 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered index/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 406ms (Views: 365.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/proyectoGPS/positions" for 127.0.0.1 at 2018-03-30 01:11:18 -0500
+Processing by PositionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering positions/new.html.erb within layouts/application
+  Rendered positions/new.html.erb within layouts/application (1894.8ms)
+Completed 200 OK in 2432ms (Views: 2170.9ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/proyectoGPS/map" for 127.0.0.1 at 2018-03-30 01:11:27 -0500
+Processing by PositionsController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering positions/show.html.erb within layouts/application
+  [1m[36mPosition Load (79.8ms)[0m  [1m[34mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = $1 AND ("positions"."created_at" BETWEEN $2 AND $3)[0m  [["user_id", 1], ["created_at", "2018-03-30"], ["created_at", "2018-03-31"]]
+  Rendered positions/show.html.erb within layouts/application (395.5ms)
+Completed 200 OK in 1143ms (Views: 596.8ms | ActiveRecord: 80.3ms)
+
+
+Started GET "/proyectoGPS/signout" for 127.0.0.1 at 2018-03-30 01:12:11 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/proyectoGPS
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/proyectoGPS" for 127.0.0.1 at 2018-03-30 01:12:11 -0500
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 291ms (Views: 249.0ms | ActiveRecord: 0.0ms)
+
+
