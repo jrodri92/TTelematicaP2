@@ -6,6 +6,5 @@ WORKDIR /railsApp
 COPY Gemfile /railsApp/Gemfile
 COPY Gemfile.lock /railsApp/Gemfile.lock
 RUN bundle install
-#COPY . /railsApp
-#RUN ls /railsApp
-#RUN rails db:migrate
+COPY . /railsApp
+RUN rails db:migrate
