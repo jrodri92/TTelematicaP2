@@ -7,4 +7,4 @@ COPY Gemfile /railsApp/Gemfile
 COPY Gemfile.lock /railsApp/Gemfile.lock
 RUN bundle install
 COPY . /railsApp
-RUN rails db:migrate
+#RUN rails db:migrate
