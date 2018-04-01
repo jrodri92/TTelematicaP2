@@ -7,7 +7,7 @@
       <input type="submit" value="Ver" class="btn">
        <%= link_to "Enviar Posiciones", "positions", class:"btn" %>
     </form>
-   
+
   </div>
 
 </div>
@@ -27,14 +27,44 @@
       center: centroMap
     };
     var myMap = new google.maps.Map(document.getElementById("map"), options);
-    var i;
-    for(i=0; i<positions.length; i++){
-      var pos = new google.maps.LatLng(positions[i].lat, positions[i].lon);
-      var mark = new google.maps.Marker({
-        position: pos,
-        map: myMap
-      });
+    var puntos = new Array();
+    for (var i=0; i<positions.length; i++){
+      var latlon = {
+        lat: Number(positions[i].lat),
+        lng: Number(positions[i].lon)
+      }
+
+      puntos.push(latlon);
     }
+
+    var camino = new google.maps.Polyline({
+          path: puntos,
+          geodesic: false,
+          strokeColor: '#0000FF',
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+    });
+
+    camino.setMap(myMap);
+    var inicio = new google.maps.Marker({
+      position: puntos[0],
+      map: myMap,
+      label: "A"
+    });
+    var final = new google.maps.Marker({
+      position: puntos[puntos.length - 1],
+      map: myMap,
+      label: "B"
+    });
+
+    // var i;
+    // for(i=0; i<positions.length; i++){
+    //   var pos = new google.maps.LatLng(positions[i].lat, positions[i].lon);
+      // var mark = new google.maps.Marker({
+      //   position: pos,
+      //   map: myMap
+      // });
+    // }
   }
 </script>
 

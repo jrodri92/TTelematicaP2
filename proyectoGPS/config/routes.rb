@@ -18,8 +18,8 @@ Rails.application.routes.draw do
 
  #  post '/positions' => 'positions#create'
 get 'auth/:provider/callback', to: 'sessions#create'
- scope '/proyectoGPS' do
-   get '/auth/failure' => redirect('/proyectoGPS')
+ scope '/' do
+   get '/auth/failure' => redirect('/')
    get '/signout' => 'sessions#destroy', as: 'signout'
     get '/positions' => 'positions#new'
     get '/map' => 'positions#show'

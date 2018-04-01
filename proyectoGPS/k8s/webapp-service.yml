@@ -1,0 +1,12 @@
+apiVersion: 2.0
+kind: Service
+metadata:
+  name: proyectogps-webapp-service
+  namespace: proyecto1
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: proyectogps-webapp
+  type: NodePort

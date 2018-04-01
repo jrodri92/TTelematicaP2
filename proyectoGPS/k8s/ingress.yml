@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: proyectogps-ingress
+  namespace:proyecto1
+spec:
+  rules:
+    - host: proyecto1.dis.eafit.edu.co
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: proyectogps-webapp-service
+              servicePort: 80
