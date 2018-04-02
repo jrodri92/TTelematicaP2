@@ -17,10 +17,10 @@
         Contenedores: Docker Engine
         Orquestador: Kubernetes
         
-        [Nginx](https://nginx.org/en/)
-        [Postgresql](https://www.postgresql.org/)
-        [Docker Engine](https://www.docker.com/)
-        [Kubernetes](https://kubernetes.io/)
+[Nginx](https://nginx.org/en/)
+[Postgresql](https://www.postgresql.org/)
+[Docker Engine](https://www.docker.com/)
+[Kubernetes](https://kubernetes.io/)
         
 **¿Cómo funciona ProyectoGPS?**
 
