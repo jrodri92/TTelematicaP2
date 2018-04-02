@@ -12,10 +12,15 @@
         Framework Web Back-End:    Rails
         Framework Web Front-End:   Templates HTML
         Web App Server:  Puma
-        Web Server:      Nginx [Documentación](https://nginx.org/en/)
-        Base de Datos:   Postgresql  [Documentación](https://www.postgresql.org/)
-        Contenedores: Docker Engine  [Documentación](https://www.docker.com/)
-        Orquestador: Kubernetes   [Documentación](https://kubernetes.io/)
+        Web Server:      Nginx
+        Base de Datos:   Postgresql
+        Contenedores: Docker Engine
+        Orquestador: Kubernetes
+        
+        [Nginx](https://nginx.org/en/)
+        [Postgresql](https://www.postgresql.org/)
+        [Docker Engine](https://www.docker.com/)
+        [Kubernetes](https://kubernetes.io/)
         
 **¿Cómo funciona ProyectoGPS?**
 
