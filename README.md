@@ -1,4 +1,4 @@
-# Repositorio Proyecto 2 (Tópicos especiales en telemática)
+# Repositorio Proyecto 2 (Tópicos especiales en telemática 2018-1)
 
     | Atributo       | Estudiante                  | Correo 				     |
     | -------------  |:---------------------------:|:---------------------------:|
@@ -12,10 +12,10 @@
         Framework Web Back-End:    Rails
         Framework Web Front-End:   Templates HTML
         Web App Server:  Puma
-        Web Server:      Nginx
-        Base de Datos:   Postgresql
-        Contenedores: Docker Engine
-        Orquestador: Kubernetes
+        Web Server:      Nginx [Documentación](https://nginx.org/en/)
+        Base de Datos:   Postgresql  [Documentación](https://www.postgresql.org/)
+        Contenedores: Docker Engine  [Documentación](https://www.docker.com/)
+        Orquestador: Kubernetes   [Documentación](https://kubernetes.io/)
         
 **¿Cómo funciona ProyectoGPS?**
 
