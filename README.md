@@ -20,16 +20,20 @@
 **¿Cómo funciona ProyectoGPS?**
 
 **Aplicación rails:**
-    
-                La aplicación cuenta con registro de usuarios e inicio de sesión con redes sociales,
-                envío de coordenadas GPS (latitud, longitud) cada segundo y registro en la bd cuando se 
-                identifican cambios en la ubicación, lo anterior mediante javascript en front-end y visualización 
-                de recorridos y posiciones en un mapa de Google Maps discriminadas por fecha y usuario.
-                
+     La aplicación cuenta con registro de usuarios e inicio de sesión con redes sociales,
+     envío de coordenadas GPS (latitud, longitud) cada segundo y registro en la bd cuando se 
+     identifican cambios en la ubicación, lo anterior mediante javascript en front-end y visualización 
+     de recorridos y posiciones en un mapa de Google Maps discriminadas por fecha y usuario.
+     
 **Despliegue**
-    
-                maq1: 10.131.137.176, 
-                con docker y docker-compose instalado, y corriendo la app (nginx, rails, postgress).
-                maq2: 10.131.137.161, 
-                con docker y docker-compose instalado, y corriendo la app (nginx, rails, postgress).
-                maq3: 10.131.137.218, con docker instalado.
+     maq1: 10.131.137.176  con:
+     * Docker.
+     * Docker-compose.
+     * app corriendo (nginx, rails, postgress).
+     maq2: 10.131.137.161 con:
+     * Docker.
+     * Docker-compose.
+     * app corriendo (nginx, rails, postgress).
+     maq3: 10.131.137.218 con:
+     * Docker
+     * BD postgres
