@@ -24,8 +24,7 @@
     	Orquestador: Kubernetes
 	   
 	   ii. URLs de repositorio (github)
-	   
-[GitHub proyecto2](https://github.com/lmbd92/TTelematicaP2)
+	   [GitHub proyecto2](https://github.com/lmbd92/TTelematicaP2)
 	   
 	b. Vista de despliegue
 	
@@ -36,8 +35,7 @@
 	   ii. URL de ejecución privada (http://10.131.137.x)
 	   
 	   iii. URL de ejecución pública y segura:
-	   
-			https://proyecto1.dis.eafit.edu.co
+	   https://proyecto1.dis.eafit.edu.co
 	        
 **3. Implementación y Pruebas por Atributo de Calidad**
 
