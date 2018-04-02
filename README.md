@@ -8,4 +8,7 @@
         Web App Server:  Puma
         Web Server:      Nginx
         Base de Datos:   Postgresql
-        Docker Engine
+        Contenedores: Docker Engine
+        Orquestador: Kubernetes
+        
+**¿Cómo funciona ProyectoGPS?**
