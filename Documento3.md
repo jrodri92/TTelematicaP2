@@ -74,7 +74,7 @@ https://proyecto1.dis.eafit.edu.co
 	 
     b. Esquemas de pruebas para comprobar el Atributo de Calidad.
     
-##4. Marco-referencia-v3: 
+## 4. Marco-referencia-v3: 
 
 **_QA - 1 Disponibilidad:_** *¿Qué es?*
 
