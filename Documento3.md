@@ -14,7 +14,18 @@
 	
 	   i. Definición de Tecnología de Desarrollo
 	   
+		Lenguaje de programación:  Ruby
+    	Framework Web Back-End:    Rails
+    	Framework Web Front-End:   Templates HTML
+    	Web App Server:  Puma
+    	Web Server:      Nginx
+    	Base de Datos:   Postgresql
+    	Contenedores: Docker Engine
+    	Orquestador: Kubernetes
+	   
 	   ii. URLs de repositorio (github)
+	   
+		[GitHub proyecto2](https://github.com/lmbd92/TTelematicaP2)
 	   
 	b. Vista de despliegue
 	
@@ -32,9 +43,9 @@
 
     a. Implementación
     
-	 i. Herramientas utilizadas
+	   i. Herramientas utilizadas
 	 
-	 ii. Cambios en la implementación de la aplicación
+	   ii. Cambios en la implementación de la aplicación
 	 
     b. Esquemas de pruebas para comprobar el Atributo de Calidad.
     
