@@ -1,6 +1,6 @@
 # Documentación general de la aplicación y su proceso.
 
-**1. Miembros del equipo
+** 1. Miembros del equipo **
 
 	| Atributo       | Estudiante                  |
 	| -------------  |:---------------------------:|
@@ -8,7 +8,7 @@
 	| Rendimiento    | Alejandro Taborda Diaz      |
 	| seguridad      | Edison Zapata Henao         |
 	
-**2. Diseño de arquitectura de la Aplicación y Sistema
+** 2. Diseño de arquitectura de la Aplicación y Sistema **
 
 	a. Vista de desarrollo
 	
@@ -28,7 +28,7 @@
 	   
 	        https://proyecto1.dis.eafit.edu.co
 	        
-**3. Implementación y Pruebas por Atributo de Calidad
+** 3. Implementación y Pruebas por Atributo de Calidad**
 
     a. Implementación
     
@@ -38,6 +38,4 @@
 	 
     b. Esquemas de pruebas para comprobar el Atributo de Calidad.
     
-**4. Marco-referencia-v3: Versión final de las bases conceptuales, patrónes,
-
-    mejores prácticas, etc de los atributos de calidad seleccionados.
+** 4. Marco-referencia-v3: Versión final de las bases conceptuales, patrónes, mejores prácticas, etc de los atributos de calidad seleccionados. **
