@@ -12,7 +12,7 @@
 
 a. Vista de desarrollo
 	
-	i. Definición de Tecnología de Desarrollo
+i. Definición de Tecnología de Desarrollo
 	   
 	Lenguaje de programación:  Ruby
     Framework Web Back-End:    Rails
@@ -23,20 +23,21 @@ a. Vista de desarrollo
     Contenedores: Docker Engine
     Orquestador: Kubernetes
 	   
-	ii. URLs de repositorio (github)
+ii. URLs de repositorio (github)
 	
-	[GitHub proyecto2](https://github.com/lmbd92/TTelematicaP2)
+[GitHub proyecto2](https://github.com/lmbd92/TTelematicaP2)
 	   
 b. Vista de despliegue
 	
-	i. Definición de Tecnología – Infraestructura TI: Servidores, Software
+i. Definición de Tecnología – Infraestructura TI: Servidores, Software
 	   
-	Base de datos, Redes, etc.
+Base de datos, Redes, etc.
 	      
-	ii. URL de ejecución privada (http://10.131.137.x)
+ii. URL de ejecución privada (http://10.131.137.x)
 	   
-	iii. URL de ejecución pública y segura:
-	https://proyecto1.dis.eafit.edu.co
+iii. URL de ejecución pública y segura:
+
+https://proyecto1.dis.eafit.edu.co
 	        
 **3. Implementación y Pruebas por Atributo de Calidad**
 
