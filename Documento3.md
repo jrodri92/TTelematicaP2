@@ -56,11 +56,13 @@ https://proyecto1.dis.eafit.edu.co
 
     a. Implementación
     
-	   i. Herramientas utilizadas
+	   i. Jmeter, Blazemeter
 	 
-	   ii. Cambios en la implementación de la aplicación
+	   ii. Se realizó un cambio en la forma en que se enviaban posiciones, anteriormente se enviaba una posición cada segundo, ahora las posiciones se envian cada vez que las coordenadas cambian cierto numero de decimales que corresponden entre 10 a 50 metros de distancia lo cual mejora considerablemente el tiempo de envio de datos, tambien se cambio la forma de dibujar las posiciones en el mapa para asi aligerar la carga de este, se cambiaron marcadores por polylineas que representan la ruta realizada.
 	 
     b. Esquemas de pruebas para comprobar el Atributo de Calidad.
+    	
+	i. Hasta ahora solo se lograron realizar pruebas de logueo a la aplicación, por lo que no se obtubieron los datos necesarios para verificar la mejora de rendimiento al implementar los cambios
     
 ### Seguridad
 
