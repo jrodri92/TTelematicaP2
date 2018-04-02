@@ -25,7 +25,7 @@
 	   
 	   ii. URLs de repositorio (github)
 	   
-		[GitHub proyecto2](https://github.com/lmbd92/TTelematicaP2)
+[GitHub proyecto2](https://github.com/lmbd92/TTelematicaP2)
 	   
 	b. Vista de despliegue
 	
