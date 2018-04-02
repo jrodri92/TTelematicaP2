@@ -26,14 +26,20 @@
      de recorridos y posiciones en un mapa de Google Maps discriminadas por fecha y usuario.
      
 **Despliegue**
+
      maq1: 10.131.137.176  con:
+     
      * Docker.
      * Docker-compose.
      * app corriendo (nginx, rails, postgress).
+     
      maq2: 10.131.137.161 con:
+     
      * Docker.
      * Docker-compose.
      * app corriendo (nginx, rails, postgress).
+     
      maq3: 10.131.137.218 con:
+     
      * Docker
      * BD postgres
