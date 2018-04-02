@@ -2,11 +2,11 @@
 
 **1. Miembros del equipo**
 
-	| Atributo       | Estudiante                  |
-	| -------------  |:---------------------------:|
-	| Disponibilidad | Lina María Beltran          |
-	| Rendimiento    | Alejandro Taborda Diaz      |
-	| seguridad      | Edison Zapata Henao         |
+	| Atributo       | Estudiante                  | Correo 				     |
+	| -------------  |:---------------------------:|:---------------------------:|
+	| Disponibilidad | Lina María Beltran          | lbeltra1@eafit.edu.co       |
+	| Rendimiento    | Alejandro Taborda Diaz      | atabord4@eafit.edu.co       |
+	| seguridad      | Edison Zapata Henao         | ezapata7@eafit.edu.co       |
 	
 **2. Diseño de arquitectura de la Aplicación y Sistema**
 
