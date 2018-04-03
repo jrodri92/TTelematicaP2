@@ -4,12 +4,19 @@ metadata:
   name: proyectogps-webapp-deployment
   namespace: proyecto1
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
         app: proyectogps-webapp
     spec:
+      containers:
+      - name: proyectogps-webapp
+        image: proyectogps/proyecto1:2.0
+
+        ports:
+        - name: rails-port
+          containerPort: 3000
       containers:
       - name: api-nginx
         image: nginx:1.13.8

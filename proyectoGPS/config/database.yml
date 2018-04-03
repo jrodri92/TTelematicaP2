@@ -31,6 +31,9 @@ development:
 # the same name as the operating system user that initialized the database.
   username: <%= ENV["PROYECTOGPS_DATABASE_USERNAME"] %>
   password: <%= ENV['PROYECTOGPS_DATABASE_PASSWORD'] %>
+   host:     db
+   port:     5432
+   timeout:  5000
 
 #Connect on a TCP socket. Omitted by default since the client uses a
 # domain socket that doesn't need configuration. Windows does not have
@@ -59,7 +62,9 @@ test:
   database: proyectoGPS_test
   username: <%= ENV["PROYECTOGPS_DATABASE_USERNAME"] %>
   password: <%= ENV['PROYECTOGPS_DATABASE_PASSWORD'] %>
-
+   host:     db
+   port:     5432
+   timeout:  5000
 # 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -85,4 +90,6 @@ production:
   database: proyectoGPS_production
   username: <%= ENV["PROYECTOGPS_DATABASE_USERNAME"] %>
   password: <%= ENV['PROYECTOGPS_DATABASE_PASSWORD'] %>
-
+  host:     db
+  port:     5432
+  timeout:  5000

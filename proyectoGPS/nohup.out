@@ -1,0 +1,12 @@
+Starting proyectogps_railsapp_1 ... 
+[1A[2KStarting proyectogps_railsapp_1 ... [32mdone[0m[1BStarting proyectogps_nginx_1    ... 
+[1A[2KStarting proyectogps_nginx_1    ... [32mdone[0m[1BAttaching to proyectogps_railsapp_1, proyectogps_nginx_1
+[36mrailsapp_1  |[0m => Booting Puma
+[36mrailsapp_1  |[0m => Rails 5.1.4 application starting in development 
+[36mrailsapp_1  |[0m => Run `rails server -h` for more startup options
+[36mrailsapp_1  |[0m Puma starting in single mode...
+[36mrailsapp_1  |[0m * Version 3.11.2 (ruby 2.4.3-p205), codename: Love Song
+[36mrailsapp_1  |[0m * Min threads: 5, max threads: 5
+[36mrailsapp_1  |[0m * Environment: development
+[36mrailsapp_1  |[0m * Listening on tcp://0.0.0.0:3000
+[36mrailsapp_1  |[0m Use Ctrl-C to stop
