@@ -32,7 +32,7 @@
      
 **Despliegue**
 
-     maq1: 10.131.137.176  con:
+     maq1: 10.131.137.218  con:
      
      * Docker.
      * Docker-compose.
@@ -44,7 +44,7 @@
      * Docker-compose.
      * app corriendo (nginx, rails, postgress).
      
-     maq3: 10.131.137.218 con:
+     maq3: 10.131.137.176 con:
      
      * Docker
      * BD postgres
