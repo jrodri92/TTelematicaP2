@@ -2,11 +2,13 @@ version: '3'
 
 services:
   railsapp:
-    build: .
+    image: proyectogps/railsapp:4.0
     command: rails s -p 3000 -b '0.0.0.0'
     environment:
       PROYECTOGPS_DATABASE_USERNAME: "${PROYECTOGPS_DATABASE_USERNAME}"
       PROYECTOGPS_DATABASE_PASSWORD: "${PROYECTOGPS_DATABASE_PASSWORD}"
+      OMNIAUTH_ID: "${OMNIAUTH_ID}"
+      OMNIAUTH_SECRE
     volumes:
       - .:/railsapp
     ports:
