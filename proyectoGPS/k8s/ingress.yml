@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: proyectogps-ingress
+  name: lbnginx-ingress-p1
   namespace: proyecto1
 spec:
   rules:
@@ -10,5 +10,5 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: proyectogps-webapp-service
+              serviceName: nginx-service-p1
               servicePort: 80
